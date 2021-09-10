@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
 
-body {
+*,
+::before,
+::after {
   margin: 0;
-  font-family: 'Zen Loop', cursive;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #07172e;
+  font-family: 'Zen Loop', cursive;
+}
+
+h1 {
+  color: #CCD6F6;
 }
