@@ -8,11 +8,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --white: #fff;
+  --brown: #1C0F13;
+  --border: 1px solid #CF9893;
+}
+
 body {
-  background-color: #07172e;
+  background-color: var(--brown);
+  color: var(--white);
   font-family: 'Zen Loop', cursive;
 }
 
 h1 {
-  color: #CCD6F6;
+  /* color: #CCD6F6; */
+  color: #CF9893;
 }
+
+button {
+  padding: 1.25rem 1.75rem;
+}
+
+
+/*** Other CSS Files ***/
