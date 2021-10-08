@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *,
 ::before,
@@ -9,25 +10,160 @@
 }
 
 :root {
-  --white: #fff;
+  --white: #d8d4f2;
   --brown: #1C0F13;
-  --border: 1px solid #CF9893;
+  --orange: #F95738;
+  --fz-xs: 1.125rem;
+  --fz-sm: 1.125rem;
+  --fz-md: 1.25rem;
+  --fz-lg: 3rem;
+  --fz-xl: 5.5rem;
+  --border: 1px solid #F95738;
+}
+
+::selection {
+  color: #1C0F13;
+  background-color: var(--orange);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--brown); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--white);
 }
 
 body {
   background-color: var(--brown);
   color: var(--white);
-  font-family: 'Zen Loop', cursive;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-h1 {
-  /* color: #CCD6F6; */
-  color: #CF9893;
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--white);
+  font-size: var(--fz-md);
 }
 
 button {
-  padding: 1.25rem 1.75rem;
+  background-color: var(--brown);
+  color: var(--white);
+  z-index: 1;
+  position: relative;
+  padding: 0.65rem 1.2rem;
+  font-weight: bold;
+  font-family: inherit;
+  border: var(--border);
+  font-size: var(--fz-sm);
+  outline: none;
+}
+button::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  background-color: var(--orange);
+  transform-origin: center right;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  color: #1C0F13;
+}
+button:hover::before {
+  transform-origin: center left;
+  transform: scaleX(1);
+}
+
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100rem;
+  min-height: 100vh;
+  padding: 0 12.5rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 62.5rem;
+  min-height: 100vh;
+}
+
+/***--- Navbar Section ---***/
+nav {
+  background-color: rgba(28, 15, 19, .8); 
+  backdrop-filter: blur(7px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 3rem;
+  transition: .35s;
+}
+nav #logo {
+  color: var(--orange);
+  font-family: 'Akronim', cursive;
+  user-select: none;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav li a {
+  color: var(--white);
+  padding: 0 1.25rem;
+  font-size: var(--fz-md);
+  font-weight: bold;
+  transition: .35s;
+}
+nav li a:hover {
+  color: var(--orange);
+}
+nav .right-nav {
+  display: flex;
+  align-items: center;
 }
 
 
-/*** Other CSS Files ***/
+
+/***--- HOME Section ---***/
+#home .hello-world {
+  color: var(--orange);
+  font-size: var(--fz-md);
+  font-weight: bold;
+}
+#home h1.name {
+  font-size: var(--fz-xl);
+  padding: .5rem 0;
+  padding-bottom: 1.5rem;
+}
+
+
+/*** Media Queries ***/
+@media only screen and (max-width: 768px) {
+  nav, main {
+    padding: 0 2rem;
+  }
+  #home h1.name {
+    font-size: var(--fz-lg);
+  }
+}
