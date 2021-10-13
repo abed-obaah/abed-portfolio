@@ -2,28 +2,29 @@ import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [offset, setOffset] = useState(0)
+  const [navShadow, setNavShadow] = useState("0")
 
   useEffect(() => {
     window.onscroll = () => {
       const scrollUp = window.pageYOffset
       if(scrollUp > offset) {
-        document.getElementById("nav").style.top = "-5rem";
+        setNavTop("-5rem")
       } else {
-        document.getElementById("nav").style.top = "0";
+        setNavTop("0")
       }
       setOffset(scrollUp)
     }
 
     if(offset > 0) {
-      document.getElementById("nav").style.boxShadow = "0 2px 1px rgba(0,0,0,0.09),0 4px 2px rgba(0,0,0,0.09),0 8px 4px rgba(0,0,0,0.09),0 16px 8px rgba(0,0,0,0.09),0 32px 16px rgba(0,0,0,0.09)";
+      setNavShadow("0 20px 20px rgba(0,0,0,0.05)")
     } else {
-      document.getElementById("nav").style.boxShadow = "none";
+      setNavShadow("none")
     }
 
   }, [offset]);
 
   return (
-    <nav id="nav">
+    <nav id="nav" style={{ top: navTop, boxShadow: navShadow }}>
       <h1>
         <a href="#" id="logo">Johnphealipto</a>
       </h1>

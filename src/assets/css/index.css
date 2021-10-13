@@ -106,7 +106,7 @@ section {
 /***--- Navbar Section ---***/
 nav {
   background-color: rgba(28, 15, 19, .8); 
-  backdrop-filter: blur(7px);
+  backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   width: 100%;
