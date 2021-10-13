@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [offset, setOffset] = useState(0)
-  const [navShadow, setNavShadow] = useState("0")
+  const [navTop, setNavTop] = useState("0")
+  const [navShadow, setNavShadow] = useState("none")
 
   useEffect(() => {
     window.onscroll = () => {
