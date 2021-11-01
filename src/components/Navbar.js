@@ -27,28 +27,28 @@ const Navbar = () => {
   return (
     <nav id="nav" style={{ top: navTop, boxShadow: navShadow }}>
       <h1>
-        <a href="#" id="logo">Johnphealipto</a>
+        <a href="#" id="logo">John Adibe</a>
       </h1>
       <div className="right-nav">
         <ul>
           <li>
-            <a href="#home">Home.</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a href="#about">About.</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a href="#experience">Experience.</a>
+            <a href="#experience">Experience</a>
           </li>
           <li>
-            <a href="#projects">Projects.</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#contact">Contact.</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
-      <button>Connect</button>
+      <button>Let's Connect</button>
     </nav>
   )
 }
