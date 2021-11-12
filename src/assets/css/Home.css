@@ -17,3 +17,24 @@ section#home {
   letter-spacing: 1px;
   word-spacing: 5px;
 }
+
+#home .social-connect {
+  list-style: none;
+  display: flex;
+  margin-top: 1rem;
+  border: 1px solid #352F2F;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+#home .social-connect li {
+  padding: .5rem .85rem;
+}
+
+#home .social-connect a {
+  color: #352F2F;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
