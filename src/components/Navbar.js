@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <nav id="nav" style={{ top: navTop, boxShadow: navShadow }}>
       <h1>
-        <a href="#" id="logo">John Adibe</a>
+        <a href="#" id="logo">jOHN</a>
       </h1>
       <div className="right-nav">
         <ul>

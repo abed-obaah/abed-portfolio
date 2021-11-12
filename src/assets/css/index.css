@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 *,
@@ -43,7 +43,6 @@ body {
 a {
   text-decoration: none;
 }
-
 
 button {
   background-color: var(--light-brown);
@@ -110,7 +109,7 @@ nav {
   transition: .35s;
 }
 nav #logo {
-  font-family: 'Akronim', cursive;
+  font-family: 'Major Mono Display', monospace;
   color: var(--brown);
   user-select: none;
 }
@@ -153,3 +152,8 @@ nav .right-nav {
     padding: 0 2rem;
   }
 }
+
+
+
+/* --- Other CSS Files --- */
+@import url(./Home.css);
