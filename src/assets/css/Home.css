@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
-section#home {
-  min-height: 100vh;
-}
-
 .home-content {
   display: flex;
   flex-direction: column;
