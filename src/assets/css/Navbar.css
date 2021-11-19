@@ -36,9 +36,41 @@ nav .right-nav {
   align-items: center;
 }
 
+nav .menu-btn {
+  display: none;
+  transition: all 0.4s ease-out;
+}
+nav .btn-line {
+  width: 25px;
+  height: 3px;
+  background-color: #3b3b3b;
+  transition: all 0.25s ease-out;
+}
+nav .btn-line:nth-child(2) {
+  width: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+nav .menu-btn.close .btn-line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+nav .menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+nav .menu-btn.close .btn-line:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
 
-/*** Media Queries ***/
+
+/*** --- Media Queries --- ***/
 @media only screen and (max-width: 768px) {
+  nav .right-nav,
+  nav .right-nav + button {
+    display: none;
+  }
+  nav .menu-btn {
+    display: block;
+  }
   nav, main {
     padding: 0 2rem;
   }

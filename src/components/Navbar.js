@@ -5,6 +5,7 @@ const Navbar = () => {
   const [navTop, setNavTop] = useState("0")
   const [navShadow, setNavShadow] = useState("none")
   const [navHeight, setNavHeight] = useState("5rem")
+  const [mobileNav, setMobileNav] = useState(false)
 
   useEffect(() => {
     window.onscroll = () => {
@@ -52,6 +53,11 @@ const Navbar = () => {
         </ul>
       </div>
       <button>Let's Connect</button>
+      <div className={mobileNav ? "menu-btn close" : "menu-btn"} onClick={() => setMobileNav(!mobileNav)}>
+        <div className="btn-line" />
+        <div className="btn-line" />
+        <div className="btn-line" />
+      </div>
     </nav>
   )
 }
