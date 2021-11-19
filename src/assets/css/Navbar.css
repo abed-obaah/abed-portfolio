@@ -35,3 +35,11 @@ nav .right-nav {
   display: flex;
   align-items: center;
 }
+
+
+/*** Media Queries ***/
+@media only screen and (max-width: 768px) {
+  nav, main {
+    padding: 0 2rem;
+  }
+}
