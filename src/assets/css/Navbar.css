@@ -1,0 +1,38 @@
+nav {
+  background-color: transparent; 
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;  
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 3rem;
+  transition: .35s;
+}
+nav #logo {
+  font-family: 'Major Mono Display', monospace;
+  color: var(--brown);
+  user-select: none;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+}
+nav li a {
+  color: var(--white);
+  padding: 0 1.25rem;
+  font-size: var(--fz-md);
+  font-weight: bold;
+  transition: .35s;
+}
+nav li a:hover {
+  color: var(--orange);
+}
+nav .right-nav {
+  display: flex;
+  align-items: center;
+}
