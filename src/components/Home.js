@@ -15,10 +15,10 @@ const Home = () => {
             <p>Email:</p>
             <a href="mailto:johnadibe450@gmail.com">johnadibe450@gmail.com</a>
           </div>
-          <div>
+          {/* <div>
             <p>Mobile:</p>
             <a href="tel:+2348141726099">+234-81-4172-6099</a>
-          </div>
+          </div> */}
         </div>
         <ul className="social-connect">
           <li>
