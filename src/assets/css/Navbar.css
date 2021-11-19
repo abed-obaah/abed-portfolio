@@ -63,6 +63,7 @@ nav .menu-btn.close .btn-line:nth-child(3) {
 
 
 /*** --- Media Queries --- ***/
+/* Medium Dimension */
 @media only screen and (max-width: 768px) {
   nav .right-nav,
   nav .right-nav + button {
