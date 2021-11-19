@@ -4,6 +4,7 @@ const Navbar = () => {
   const [offset, setOffset] = useState(0)
   const [navTop, setNavTop] = useState("0")
   const [navShadow, setNavShadow] = useState("none")
+  const [navHeight, setNavHeight] = useState("5rem")
 
   useEffect(() => {
     window.onscroll = () => {
@@ -18,14 +19,16 @@ const Navbar = () => {
 
     if(offset > 0) {
       setNavShadow("0 20px 20px rgba(0,0,0,0.05)")
+      setNavHeight("4rem")
     } else {
       setNavShadow("none")
+      setNavHeight("5rem")
     }
 
   }, [offset]);
 
   return (
-    <nav id="nav" style={{ top: navTop, boxShadow: navShadow }}>
+    <nav id="nav" style={{ top: navTop, boxShadow: navShadow, height: navHeight }}>
       <h1>
         <a href="#" id="logo">jOHN</a>
       </h1>

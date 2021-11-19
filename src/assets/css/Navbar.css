@@ -7,7 +7,6 @@ nav {
   display: flex;  
   align-items: center;
   justify-content: space-between;
-  height: 5rem;
   padding: 0 3rem;
   transition: .35s;
 }
