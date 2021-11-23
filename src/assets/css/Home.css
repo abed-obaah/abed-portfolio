@@ -19,17 +19,7 @@
   transition: 0.25s;
 }
 #home a:hover {
-  color: #c73d0f;
-}
-
-#home .contact-details {
-  display: flex;
-  column-gap: 2rem;
-  margin-top: 1rem;
-}
-
-#home .contact-details p:nth-child(odd) {
-  font-weight: bold;
+  color: #ca3300;
 }
 
 #home .social-connect {
@@ -53,9 +43,5 @@
 /*** --- Media Queries --- ***/
 /* Mobile Dimension */
 @media only screen and (max-width: 480px) {
-  #home .contact-details {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-  }
+  
 }

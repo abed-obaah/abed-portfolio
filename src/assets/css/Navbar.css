@@ -22,14 +22,13 @@ nav ul li {
   list-style: none;
 }
 nav li a {
-  color: var(--white);
+  color: #352F2F;
   padding: 0 1.25rem;
-  font-size: var(--fz-md);
   font-weight: bold;
   transition: .35s;
 }
 nav li a:hover {
-  color: var(--orange);
+  color: #ca3300;
 }
 nav .right-nav {
   display: flex;
