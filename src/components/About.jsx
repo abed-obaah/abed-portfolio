@@ -6,8 +6,8 @@ const About = () => {
       <div className="section-content">
         <h2 className="jae_title">About Me</h2>
         <div className="about-details">
-          <p>My name is John Adibe Ebube. I am a Frontend Developer settled in Lagos State, Nigeria who derives passion from modern Tech innovations.</p>
-          <p>I started as a Maths Tutor, thanks to my degree in Mathematics. Tutoring & mentoring for about 3 years led to an idea of boosting my knowledge on Tech - then I saw myself building Web-based & Mobile-based app.</p>
+          <pI am a Frontend Developer based in Lagos, Nigeria who derives passion from modern Tech innovations.</p>
+          <p>I started off as a Maths Tutor, thanks to my degree in Mathematics. Tutored for about 3 years, then after - as a Tech enthusiast, I choose to explore more on its fundamentals. Fast-forward to this moment, I now can build web-based & mobile-based applications.</p>
           <p>Today, I am currently working as a Software Developer at <a href="https://www.outcess.com/" className="a_link" target="_blank">Outcess Solutions LTD</a> where I build enhanced solution provided applications.</p>
           <p>Below are the few technologies I work with:</p>
           <ul>
