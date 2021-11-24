@@ -12,7 +12,8 @@ nav {
 }
 nav #logo {
   font-family: 'Major Mono Display', monospace;
-  color: var(--brown);
+  color: #352F2F;
+  font-size: 1.65rem;
   user-select: none;
 }
 nav ul {
@@ -24,7 +25,6 @@ nav ul li {
 nav li a {
   color: #352F2F;
   padding: 0 1.25rem;
-  font-weight: bold;
   transition: .35s;
 }
 nav li a:hover {
@@ -50,14 +50,20 @@ nav .btn-line:nth-child(2) {
   margin-top: 6px;
   margin-bottom: 6px;
 }
+nav .menu-btn.close {
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
 nav .menu-btn.close .btn-line:nth-child(1) {
   transform: rotate(45deg) translate(6px, 6px);
+  -webkit-transform: rotate(45deg) translate(6px, 6px);
 }
 nav .menu-btn.close .btn-line:nth-child(2) {
   opacity: 0;
 }
 nav .menu-btn.close .btn-line:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
+  -webkit-transform: rotate(-45deg) translate(7px, -7px);
 }
 
 

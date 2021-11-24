@@ -1,0 +1,21 @@
+#about .about-details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+#about .about-details ul {
+  list-style-type: square;
+  list-style-position: inside;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  column-gap: 5rem;
+}
+
+#about .about-details li {
+  color: #ca3300;
+}
+#about .about-details li span {
+  color: #352F2F;
+}

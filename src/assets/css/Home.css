@@ -3,7 +3,7 @@
 .home-content {
   display: flex;
   flex-direction: column;
-  gap: .25rem;
+  gap: .5rem;
 }
 
 #home .my-name {
@@ -12,6 +12,11 @@
   font-weight: bold;
   letter-spacing: 1px;
   word-spacing: 5px;
+}
+
+#home .my-name + h1 {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 #home a {
@@ -31,10 +36,10 @@
   border-radius: 5px;
 }
 #home .social-connect li {
-  padding: .5rem 1rem;
+  padding: .65rem 1.25rem;
 }
 #home .social-connect a {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

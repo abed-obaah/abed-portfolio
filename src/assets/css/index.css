@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@font-face {
+  font-family: "Outfit";
+  src: url(../fonts/Outfit/static/Outfit-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Major Mono Display";
+  src: url(../fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf) format('truetype');
+}
 
 *,
-::before,
-::after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  --brown: #352F2F;
-  --light-brown: #DEC6A2;
-}
-
 ::selection {
-  background-color: rgba(53, 47, 47, .75);
+  background-color: rgba(53, 47, 47, .65);
   color: #DEC6A2;
 }
 
@@ -23,10 +25,14 @@
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background:  var(--brown);
+  background:  #352F2F;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--light-brown); 
+  background: #DEC6A2; 
+}
+
+html, body {
+  height: 100%;
 }
 
 html {
@@ -34,24 +40,60 @@ html {
 }
 
 body {
-  background-color: var(--light-brown);
-  color: var(--brown);
-  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #DEC6A2;
+  color: #352F2F;
+  font-family: 'Outfit', sans-serif;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
 }
 
 a {
   text-decoration: none;
 }
 
+.a_link {
+  position: relative;
+  color: #ca3300;
+}
+.a_link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #ca3300;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+.a_link:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
 button {
-  background-color: var(--light-brown);
-  color: var(--brown);
+  background-color: #DEC6A2;
+  color: #352F2F;
   z-index: 1;
   position: relative;
   padding: 0.65rem 1.2rem;
-  font-weight: bold;
-  font-family: inherit;
-  border: 2px solid var(--brown);
+  border: 2px solid #352F2F;
   outline: none;
 }
 button::before {
@@ -62,14 +104,14 @@ button::before {
   bottom: -1px;
   left: 0;
   right: 0;
-  background-color: var(--brown);
+  background-color: #352F2F;
   transform-origin: center right;
   transform: scaleX(0);
   transition: transform 0.25s ease-in-out;
 }
 button:hover {
   cursor: pointer;
-  color: var(--light-brown);
+  color: #DEC6A2;
 }
 button:hover::before {
   transform-origin: center left;
@@ -91,6 +133,10 @@ section {
   align-items: flex-start;
   max-width: 62.5rem;
   min-height: 100vh;
+}
+
+section .jae_title {
+  margin-bottom: 1.5rem;
 }
 
 
