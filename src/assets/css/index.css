@@ -3,11 +3,6 @@
   src: url(../fonts/Outfit/static/Outfit-Medium.ttf) format('truetype');
 }
 
-@font-face {
-  font-family: "Major Mono Display";
-  src: url(../fonts/Major_Mono_Display/MajorMonoDisplay-Regular.ttf) format('truetype');
-}
-
 *,
 *::before,
 *::after {
@@ -31,6 +26,12 @@
   background: #DEC6A2; 
 }
 
+:root {
+  --brown: #352F2F;
+  --light-brown: rgba(53, 47, 47, .95);
+  --orange: #ca3300;
+}
+
 html, body {
   height: 100%;
 }
@@ -41,7 +42,7 @@ html {
 
 body {
   background-color: #DEC6A2;
-  color: #352F2F;
+  color: var(--light-brown);
   font-family: 'Outfit', sans-serif;
 }
 
@@ -60,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
 
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+}
+
+p, span {
+  color: var(--light-brown);
 }
 
 a {

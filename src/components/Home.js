@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section id="home">
       <div className="home-content">
-        <p>Hello! I'm</p>
+        <p className="hi-there">Hello! I'm</p>
         <h1 className="my-name">John Adibe</h1>
         <h1>Frontend Developer</h1>
         <p>Focused on building accessible & human-centered products.</p>

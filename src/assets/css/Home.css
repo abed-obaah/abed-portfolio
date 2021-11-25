@@ -6,8 +6,14 @@
   gap: .5rem;
 }
 
+#home .hi-there {
+  color: #ca3300;
+  font-size: 1.2rem;
+}
+
 #home .my-name {
   font-family: 'Ranchers', cursive;
+  color: var(--brown);
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -15,16 +21,15 @@
 }
 
 #home .my-name + h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 1.75rem;
 }
 
 #home a {
-  color: #352F2F;
+  color: var(--light-brown);
   transition: 0.25s;
 }
 #home a:hover {
-  color: #ca3300;
+  color: var(--orange);
 }
 
 #home .social-connect {
