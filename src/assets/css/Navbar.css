@@ -32,7 +32,8 @@ nav li a {
   padding: 0 1.25rem;
   transition: .35s;
 }
-nav li a:hover {
+nav li a:hover,
+nav li a:focus {
   color: #ca3300;
 }
 nav .right-nav {
@@ -47,7 +48,7 @@ nav .menu-btn {
 nav .btn-line {
   width: 25px;
   height: 3px;
-  background-color: #3b3b3b;
+  background-color: #352F2F;
   transition: all 0.25s ease-out;
 }
 nav .btn-line:nth-child(2) {
@@ -75,14 +76,14 @@ nav .menu-btn.close .btn-line:nth-child(3) {
 /*** --- Media Queries --- ***/
 /* Medium Dimension */
 @media only screen and (max-width: 768px) {
+  nav {
+    padding: 0 2rem;
+  }
   nav .right-nav,
   nav .right-nav + button {
     display: none;
   }
   nav .menu-btn {
     display: block;
-  }
-  nav, main {
-    padding: 0 2rem;
   }
 }

@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
 
-.home-content {
+#home {
+  min-height: 100vh;
+}
+
+#home .home-content {
   display: flex;
   flex-direction: column;
   gap: .5rem;
 }
 
 #home .hi-there {
-  color: #ca3300;
+  color: var(--orange);
   font-size: 1.2rem;
 }
 
@@ -28,7 +32,8 @@
   color: var(--light-brown);
   transition: 0.25s;
 }
-#home a:hover {
+#home a:hover,
+#home a:focus {
   color: var(--orange);
 }
 
@@ -48,10 +53,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*** --- Media Queries --- ***/
-/* Mobile Dimension */
-@media only screen and (max-width: 480px) {
-  
 }
