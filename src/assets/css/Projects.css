@@ -1,0 +1,7 @@
+#projects .title::before {
+  content: "my projects";
+}
+
+#projects .project-title .title {
+  margin-bottom: 0;
+}

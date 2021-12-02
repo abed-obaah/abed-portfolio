@@ -1,3 +1,14 @@
+#about .title::before {
+  content: "about me";
+}
+
+#about button {
+  display: block;
+  width: fit-content;
+  padding: .45rem 2rem;
+  margin-top: 1rem;
+}
+
 #about .about-details {
   display: flex;
   flex-direction: column;
@@ -14,5 +25,5 @@
 }
 
 #about .about-details li {
-  color: #ca3300;
+  color: var(--clr-orange);
 }
