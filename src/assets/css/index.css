@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-* {
-  /* outline: 2px solid red; */
-}
-
 :root {
   --clr-brown: #352F2F;
   --clr-text: rgba(53, 47, 47, .9);
