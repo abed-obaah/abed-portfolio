@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Outfit";
-  src: url(../fonts/Outfit/static/Outfit-Medium.ttf) format('truetype');
+  font-family: "Alegreya Sans";
+  src: url(../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf) format('truetype');
 }
 
 *,
@@ -44,7 +44,7 @@ html {
 body { 
   background-color: var(--clr-light);
   color: var(--clr-text);
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Alegreya Sans', sans-serif;
   line-height: 1.3;
 }
 
@@ -140,7 +140,7 @@ section .section-content {
   margin: 0 auto;
   width: 100%;
   max-width: 100rem;
-  padding: 5rem 0;
+  padding: 5.5rem 0;
 }
 
 section .title {
@@ -172,7 +172,7 @@ section .title::before {
 
 
 /* --- Other CSS Files --- */
-@import url(./Navbar.css);
+@import url(./Header.css);
 @import url(./Home.css);
 @import url(./About.css);
 @import url(./Projects.css);

@@ -10,7 +10,7 @@ const Home = () => {
           <p className="hi-there">Hello! I'm</p>
           <h1 className="my-name">John Adibe</h1>
           <h1>Frontend Developer</h1>
-          <p>Focused on building accessible & human-centered products.</p>
+          <p>Focused on building accessible & human-centered products. If you require amazing hands-on skills on your project, I'm your guy.</p>
           <ul className="social-connect">
             <li>
               <a href="https://github.com/johnphealipto" target="_blank" rel="noopener noreferrer">

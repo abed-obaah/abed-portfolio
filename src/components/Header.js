@@ -28,30 +28,42 @@ const Header = () => {
 
   }, [offset]);
 
+  useEffect(() => {
+    if(toggleNav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [toggleNav])
+
+  const handleClickMenu = () => {
+    setNavToggle(false)
+  }
+
   return (
-    <header id="nav" style={{ top: headerTop, boxShadow: headerShadow, height: headerHeight }}>
+    <header id="header" style={{ top: headerTop, boxShadow: headerShadow, height: headerHeight }}>
       <h1>
-        <a href="#" id="logo">jOHN</a>
+        <a href="/" id="logo">jOHN</a>
       </h1>
-      <nav>
-        <ul className="primary-nav">
-          <li>
+      <nav className={toggleNav ? "nav-visible" : ""}>
+        <ul id="primary-nav" className="primary-nav" tabIndex={0} onBlur={() => setNavToggle(false)}>
+          <li onClick={handleClickMenu}>
             <a href="#about">About</a>
           </li>
-          <li>
+          <li onClick={handleClickMenu}>
             <a href="#experience">Experience</a>
           </li>
-          <li>
+          <li onClick={handleClickMenu}>
             <a href="#projects">Projects</a>
           </li>
-          <li>
+          <li onClick={handleClickMenu}>
             <a href="#contact">Contact</a>
           </li>
-          <button>R&eacute;sum&eacute;</button>
+          <button onClick={handleClickMenu}>R&eacute;sum&eacute;</button>
         </ul>
       </nav>
       <button>Let's Connect</button>
-      <div className={toggleNav ? "menu-btn close" : "menu-btn"} onClick={() => setNavToggle(!toggleNav)}>
+      <div aria-controls="primary-nav" className={toggleNav ? "menu-btn close" : "menu-btn"} onClick={() => setNavToggle(!toggleNav)}>
         <div className="btn-line" />
         <div className="btn-line" />
         <div className="btn-line" />
