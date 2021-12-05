@@ -28,7 +28,7 @@
 }
 
 #home .my-name + h1 {
-  color: var(--clr-brown);
+  color: var(--clr-text);
   font-size: 1.75rem;
 }
 

@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 
 const Header = () => {
+  const ref = useRef()
+
   const [offset, setOffset] = useState(0)
   const [headerTop, setHeaderTop] = useState("0")
   const [headerShadow, setHeaderShadow] = useState("none")
@@ -36,9 +38,26 @@ const Header = () => {
     }
   }, [toggleNav])
 
+  // --- Handle clicking each menu item --- //
   const handleClickMenu = () => {
     setNavToggle(false)
   }
+
+  // --- Handling clicking outside --- //
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setNavToggle(false)
+      }
+    }
+
+    document.addEventListener('click', handleClickOutside, true)
+    return () => {
+      document.removeEventListener('click', handleClickOutside, true)
+    }
+  }, [])
+
+  console.log(toggleNav)
 
   return (
     <header id="header" style={{ top: headerTop, boxShadow: headerShadow, height: headerHeight }}>
@@ -46,7 +65,7 @@ const Header = () => {
         <a href="/" id="logo">jOHN</a>
       </h1>
       <nav className={toggleNav ? "nav-visible" : ""}>
-        <ul id="primary-nav" className="primary-nav" tabIndex={0} onBlur={() => setNavToggle(false)}>
+        <ul ref={ref} className="primary-nav">
           <li onClick={handleClickMenu}>
             <a href="#about">About</a>
           </li>
@@ -63,7 +82,7 @@ const Header = () => {
         </ul>
       </nav>
       <button>Let's Connect</button>
-      <div aria-controls="primary-nav" className={toggleNav ? "menu-btn close" : "menu-btn"} onClick={() => setNavToggle(!toggleNav)}>
+      <div className={toggleNav ? "menu-btn close" : "menu-btn"} onClick={() => setNavToggle(!toggleNav)}>
         <div className="btn-line" />
         <div className="btn-line" />
         <div className="btn-line" />
