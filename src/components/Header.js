@@ -57,8 +57,6 @@ const Header = () => {
     }
   }, [])
 
-  console.log(toggleNav)
-
   return (
     <header id="header" style={{ top: headerTop, boxShadow: headerShadow, height: headerHeight }}>
       <h1>
