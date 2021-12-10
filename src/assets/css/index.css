@@ -133,14 +133,14 @@ section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 12.5rem;
+  padding: 0 10rem;
 }
 
 section .section-content {
   margin: 0 auto;
   width: 100%;
   max-width: 100rem;
-  padding: 5.5rem 0;
+  padding: 5rem 0;
 }
 
 section .title {
@@ -159,6 +159,10 @@ section .title::before {
   -webkit-text-fill-color: transparent;
 }
 
+.align-centre {
+  text-align: center;
+}
+
 
 /*** Media Queries ***/
 @media only screen and (max-width: 768px) {
@@ -175,4 +179,5 @@ section .title::before {
 @import url(./Header.css);
 @import url(./Home.css);
 @import url(./About.css);
+@import url(./Services.css);
 @import url(./Projects.css);

@@ -12,7 +12,7 @@
 #about .about-details {
   display: flex;
   flex-direction: column;
-  row-gap: 1rem;
+  row-gap: .85rem;
 }
 
 #about .about-details ul {
