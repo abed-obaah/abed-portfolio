@@ -9,7 +9,7 @@ const About = () => {
           <p>I'm a Frontend Developer based in Lagos. I derive interest in building things of the web with great performance assured.</p>
           <p>With my degree in Mathematics, I started off as a Maths Tutor for over 2 years before switching to web development.</p>
           <p>Currently, I'm working at <a href="https://www.outcess.com/" className="a_link" target="_blank" rel="noopener noreferrer">Outcess</a> as a Software Developer, where I build enhanced solution provided applications.</p>
-          <p>The Tech stack I work with:</p>
+          <p>Below are the Tech stack I work with:</p>
           <ul>
             <li><span>JavaScript</span></li>
             <li><span>Node</span></li>

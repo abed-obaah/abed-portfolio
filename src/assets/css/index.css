@@ -88,7 +88,6 @@ a {
   background-color: var(--clr-orange);
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 0.5s cubic-bezier(1, 0.18, 0.6, 1.1);
 }
 .a_link:hover::before,
 .a_link:focus::before {
@@ -116,7 +115,6 @@ button::before {
   background-color: var(--clr-brown);
   transform-origin: center right;
   transform: scaleX(0);
-  transition: transform 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
 }
 button:hover,
 button:focus {
@@ -159,8 +157,15 @@ section .title::before {
   -webkit-text-fill-color: transparent;
 }
 
-.align-centre {
-  text-align: center;
+
+/* --- Supported Devices --- */
+@supports (transition: transition) {
+  .a_link::before {
+    transition: transform 0.5s cubic-bezier(1, 0.18, 0.6, 1.1);
+  }
+  button::before {
+    transition: transform 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
+  }
 }
 
 

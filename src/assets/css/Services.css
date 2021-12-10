@@ -44,6 +44,10 @@
   color: var(--clr-light);
 }
 
+#services .card-title {
+  color: var(--clr-brown);
+}
+
 #services .card-body {
   padding: 0 1.25rem;
 }

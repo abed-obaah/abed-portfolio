@@ -12,8 +12,6 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 3rem;
-  transition: .35s;
-  -webkit-transition: .35s;
   z-index: 99;
 }
 
@@ -40,8 +38,6 @@ header ul li {
 header li a {
   color: var(--clr-brown);
   padding: 0 1.25rem;
-  transition: .35s;
-  -webkit-transition: .35s;
 }
 header li a:hover,
 header li a:focus {
@@ -54,15 +50,12 @@ header .primary-nav button {
 
 header .menu-btn {
   display: none;
-  transition: all 0.4s cubic-bezier(0.85,-0.07, 0.53, 1.36);
-  -webkit-transition: all 0.4s cubic-bezier(0.85,-0.07, 0.53, 1.36);
+  padding: .5rem;
 }
 header .btn-line {
   width: 25px;
   height: 3px;
   background-color: var(--clr-brown);
-  transition: all 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
-  -webkit-transition: all 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
 }
 header .btn-line:nth-child(2) {
   width: 20px;
@@ -86,6 +79,23 @@ header .menu-btn.close .btn-line:nth-child(3) {
 }
 
 
+/* --- Supported Devices --- */
+@supports (transition: transition) {
+  header {
+    transition: .35s;
+  }
+  header li a {
+    transition: .35s;
+  }
+  header .menu-btn {
+    transition: all 0.4s cubic-bezier(0.85,-0.07, 0.53, 1.36);
+  }
+  header .btn-line {
+    transition: all 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
+  }
+}
+
+
 /*** --- Media Queries --- ***/
 /* Medium Dimension */
 @media only screen and (max-width: 768px) {
@@ -104,13 +114,9 @@ header .menu-btn.close .btn-line:nth-child(3) {
     position: fixed;
     inset: 0;
     transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transition: transform 350ms cubic-bezier(1, 0.18, 0.6, 1.1);
-    -webkit-transition: transform 350ms cubic-bezier(1, 0.18, 0.6, 1.1);
   }
   header nav.nav-visible {
     transform: translateX(0%);
-    -webkit-transform: translateX(0%);
     background-color: rgba(0, 0, 0, .25);
   }
   header .primary-nav {
@@ -144,10 +150,16 @@ header .menu-btn.close .btn-line:nth-child(3) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  @supports (backdrop-filter: blur(1rem)) {
+  /* --- Supported Devices --- */
+  @supports (backdrop-filter: blur(.5rem)) {
     header nav.nav-visible {
       background-color:rgba(240, 215, 178, .1);
-      backdrop-filter: blur(5px);
+      backdrop-filter: blur(.5rem);
+    }
+  }
+  @supports (transition: transition) {
+    header nav {
+      transition: transform 350ms cubic-bezier(1, 0.18, 0.6, 1.1);
     }
   }
 }

@@ -30,6 +30,7 @@ const Header = () => {
 
   }, [offset]);
 
+  // --- Hide vertical scroll when mobile menu is active --- //
   useEffect(() => {
     if(toggleNav) {
       document.body.style.overflow = "hidden";
@@ -68,7 +69,7 @@ const Header = () => {
             <a href="#about">About</a>
           </li>
           <li onClick={handleClickMenu}>
-            <a href="#experience">Experience</a>
+            <a href="#services">Services</a>
           </li>
           <li onClick={handleClickMenu}>
             <a href="#projects">Projects</a>

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faCloudUploadAlt, faTools } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
+  
   const cards = [
     {
       icon: faLaptopCode,
@@ -11,7 +12,7 @@ const Services = () => {
     },
     {
       icon: faTools,
-      title: "Software Architect",
+      title: "Software Architecture",
       body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae"
     },
     {
