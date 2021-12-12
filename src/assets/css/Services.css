@@ -15,7 +15,7 @@
 
 #services .card {
   padding: 1.25rem 0;
-  border-left: 3px solid var(--clr-orange);
+  border-left: 1px solid var(--clr-orange);
   box-shadow: 0 0 4px rgba(0, 0, 0, .025),
               0 0 16px rgba(0, 0, 0, .025),
               0 0 32px rgba(0, 0, 0, .025),
