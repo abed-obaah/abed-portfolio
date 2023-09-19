@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react';
 
 const Header = () => {
-  const ref = useRef()
+  const ref = useRef<HTMLUListElement>()
 
   const [offset, setOffset] = useState(0)
   const [headerTop, setHeaderTop] = useState("0")

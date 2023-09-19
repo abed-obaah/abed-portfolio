@@ -1,26 +1,23 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faCloudUploadAlt, faTools } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
 
 const Services = () => {
-  
   const cards = [
     {
-      icon: faLaptopCode,
+      // icon: faLaptopCode,
       title: "Web Development",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae"
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
     },
     {
-      icon: faTools,
+      // icon: faTools,
       title: "Software Architecture",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae"
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
     },
     {
-      icon: faCloudUploadAlt,
+      // icon: faCloudUploadAlt,
       title: "Cloud Computing",
-      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae"
-    }
-  ]
+      body: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae",
+    },
+  ];
 
   return (
     <section id="services">
@@ -34,7 +31,7 @@ const Services = () => {
             <div key={index} className="card">
               <div className="card-header">
                 <div className="card-icon">
-                  <FontAwesomeIcon icon={item.icon} />
+                  {/* <FontAwesomeIcon icon={item.icon} /> */}
                 </div>
                 <h3 className="card-title">{item.title}</h3>
               </div>
@@ -44,7 +41,7 @@ const Services = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Services;
