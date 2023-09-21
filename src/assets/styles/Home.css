@@ -40,21 +40,3 @@
 #home a:focus {
   color: var(--clr-orange);
 }
-
-#home .social-connect {
-  list-style: none;
-  display: flex;
-  margin-top: 1rem;
-  border: 1px solid var(--clr-brown);
-  width: fit-content;
-  border-radius: 5px;
-}
-#home .social-connect li {
-  padding: .65rem 1.25rem;
-}
-#home .social-connect a {
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

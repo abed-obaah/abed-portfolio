@@ -1,6 +1,4 @@
-import React from "react";
-
-const Home = () => {
+const Hero = () => {
   return (
     <section id="home">
       <div className="section-content">
@@ -47,4 +45,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;

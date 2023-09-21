@@ -1,6 +1,3 @@
-import React from 'react';
-import { ProjectData } from '../data/ProjectData';
-
 const Projects = () => {
   return (
     <section id="projects">
@@ -11,7 +8,7 @@ const Projects = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Projects;
