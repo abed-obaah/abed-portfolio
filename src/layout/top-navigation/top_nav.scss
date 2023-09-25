@@ -1,3 +1,5 @@
+@import "@/assets/styles/variables";
+
 header {
   background-color: transparent;
   position: fixed;
@@ -21,7 +23,7 @@ header ul li {
 
 header li a:hover,
 header li a:focus {
-  color: var(--clr-orange);
+  color: $strong-orange;
 }
 
 header .menu-btn {
@@ -108,7 +110,7 @@ header .menu-btn.close .btn-line:nth-child(3) {
     counter-increment: menu;
     content: "0" counters(menu, ".") ".";
     font-weight: bold;
-    color: var(--clr-orange);
+    color: $strong-orange;
   }
   /* --- Supported Devices --- */
   @supports (backdrop-filter: blur(0.5rem)) {

@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import { useEffect, useState, useRef } from "react";
 import Logo from "@/assets/img/john.svg?react";
+import { useLenis } from "@studio-freight/react-lenis";
+
 import "./top_nav.scss";
 
 const NAV_ITEMS = [
@@ -11,12 +13,12 @@ const NAV_ITEMS = [
 ];
 
 const TopNavigation = () => {
+  const lenis = useLenis();
   const ref = useRef<HTMLUListElement>(null);
   const margin = "20px";
 
   const [offset, setOffset] = useState(0);
   const [headerTop, setHeaderTop] = useState(margin);
-  const [headerHeight, setHeaderHeight] = useState("4.5rem");
   const [toggleNav, setNavToggle] = useState(false);
 
   useEffect(() => {
@@ -29,12 +31,6 @@ const TopNavigation = () => {
       }
       setOffset(scrollUp);
     };
-
-    if (offset > 0) {
-      setHeaderHeight("4.25rem");
-    } else {
-      setHeaderHeight("4.5rem");
-    }
   }, [offset]);
 
   // --- Hide vertical scroll when mobile menu is active --- //
@@ -67,12 +63,11 @@ const TopNavigation = () => {
 
   return (
     <header
-      className="flex items-center justify-between px-4 md:px-12"
+      className="flex items-center justify-between h-16 px-4 md:px-12"
       style={{
         top: headerTop,
         right: margin,
         left: margin,
-        height: headerHeight,
       }}
     >
       <a href="/" className="text-white">
@@ -82,7 +77,11 @@ const TopNavigation = () => {
         <ul ref={ref} className="primary-nav">
           {NAV_ITEMS.map((item, idx) => (
             <li key={idx} className="flex h-fit" onClick={handleClickMenu}>
-              <a href={item.path} className="text-white h-fit px-5">
+              <a
+                href={item.path}
+                className="text-white h-fit px-5"
+                onClick={() => lenis.scrollTo(item.path)}
+              >
                 {item.name}
               </a>
             </li>

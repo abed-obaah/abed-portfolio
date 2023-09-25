@@ -5,14 +5,14 @@
 #about button {
   display: block;
   width: fit-content;
-  padding: .45rem 2rem;
+  padding: 0.45rem 2rem;
   margin-top: 1rem;
 }
 
 #about .about-details {
   display: flex;
   flex-direction: column;
-  row-gap: .85rem;
+  row-gap: 0.85rem;
 }
 
 #about .about-details ul {
@@ -25,5 +25,5 @@
 }
 
 #about .about-details li {
-  color: var(--clr-orange);
+  color: $strong-orange;
 }

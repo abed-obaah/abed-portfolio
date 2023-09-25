@@ -15,11 +15,9 @@
 
 #services .card {
   padding: 1.25rem 0;
-  border-left: 1px solid var(--clr-orange);
-  box-shadow: 0 0 4px rgba(0, 0, 0, .025),
-              0 0 16px rgba(0, 0, 0, .025),
-              0 0 32px rgba(0, 0, 0, .025),
-              0 0 64px rgba(0, 0, 0, .025);
+  border-left: 1px solid $strong-orange;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.025), 0 0 16px rgba(0, 0, 0, 0.025),
+    0 0 32px rgba(0, 0, 0, 0.025), 0 0 64px rgba(0, 0, 0, 0.025);
 }
 
 #services .card-header {
@@ -30,14 +28,14 @@
 }
 
 #services .card-icon {
-  background-color: var(--clr-orange);
+  background-color: $strong-orange;
   width: fit-content;
-  padding: .5rem .65rem;
+  padding: 0.5rem 0.65rem;
 }
 
 #services .card-icon svg {
   width: 25px;
-  height: 25px
+  height: 25px;
 }
 
 #services .card-icon path {
@@ -51,7 +49,6 @@
 #services .card-body {
   padding: 0 1.25rem;
 }
-
 
 /*** Media Queries ***/
 @media only screen and (max-width: 480px) {

@@ -7,6 +7,9 @@
   src: url(../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf) format("truetype");
 }
 
+@import "lenis";
+@import "variables";
+
 *,
 *::before,
 *::after {
@@ -23,12 +26,12 @@
   // --clr-brown: #999999;
   // --clr-text: rgba(204, 204, 204, 0.9);
   // --clr-light: #f0d7b2;
-  // --clr-orange: #ca3300;
+  // $strong-orange: $strong-orange;
 }
 
 ::selection {
-  background-color: rgba(53, 47, 47, 0.75);
-  color: #000;
+  background-color: rgb($strong-orange, 0.75);
+  color: $black;
 }
 
 ::-webkit-scrollbar {
@@ -41,22 +44,13 @@
   background: var(--clr-brown);
 }
 
-html,
 body {
-  height: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: #000;
-  // background-color: #0c0c0c;
+  background-color: $black;
+  min-height: 100vh;
   background-image: url(../img/noise-bg.png);
   background-attachment: fixed;
-  color: var(--clr-text);
-  font-family: "Alegreya Sans", sans-serif;
+  color: $white;
+  // font-family: "Alegreya Sans", sans-serif;
   line-height: 1.3;
 }
 
@@ -98,7 +92,7 @@ a {
 
 .a_link {
   position: relative;
-  color: var(--clr-orange);
+  color: $strong-orange;
 }
 .a_link::before {
   content: "";
@@ -107,7 +101,7 @@ a {
   left: 0;
   right: 0;
   height: 1px;
-  background-color: var(--clr-orange);
+  background-color: $strong-orange;
   transform-origin: right;
   transform: scaleX(0);
 }
@@ -119,11 +113,12 @@ a {
 
 button {
   background-color: transparent;
-  color: var(--clr-brown);
+  color: $strong-orange;
   z-index: 1;
+  font-weight: 700;
   position: relative;
   padding: 0.65rem 1.2rem;
-  border: 2px solid var(--clr-brown);
+  border: 1px solid $strong-orange;
   outline: none;
 }
 button::before {
@@ -134,19 +129,28 @@ button::before {
   bottom: -1px;
   left: -1px;
   right: -1px;
-  background-color: var(--clr-brown);
+  background-color: $strong-orange;
   transform-origin: center right;
   transform: scaleX(0);
 }
 button:hover,
 button:focus {
   cursor: pointer;
-  color: var(--clr-light);
+  color: $black;
 }
 button:hover::before,
 button:focus::before {
   transform-origin: center left;
   transform: scaleX(1);
+}
+
+.container {
+  --root-padding: 20px;
+  width: 100%;
+  max-width: calc(1234px + var(--root-padding) * 2);
+  // min-height: 588px;
+  margin: 0 auto;
+  padding: 0 var(--root-padding);
 }
 
 section {
@@ -205,7 +209,6 @@ section .title::before {
 }
 
 /* --- Other CSS Files --- */
-@import url(./Home.css);
 @import url(./About.css);
 @import url(./Services.css);
 @import url(./Projects.css);
