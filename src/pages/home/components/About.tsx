@@ -1,6 +1,7 @@
 import gsap from "gsap";
-import { useEffect, useRef } from "react";
 import SplitType from "split-type";
+import { useEffect, useRef } from "react";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 const About = () => {
   const contRef = useRef<HTMLDivElement>(null);
@@ -9,25 +10,40 @@ const About = () => {
   useEffect(() => {
     const splitText = new SplitType(textRef.current, { types: "chars, words" });
 
-    gsap.from(splitText.chars, {
-      scrollTrigger: {
-        trigger: textRef.current,
-        start: "top 50%",
-        end: "top 10%",
-        // pin: true,
-        // start: "top top",
-        // end: "+=100%",
-        // pinSpacing: true,
-        scrub: 1,
-        markers: true,
-      },
+    // gsap.from(splitText.chars, {
+    //   scrollTrigger: {
+    //     trigger: textRef.current,
+    //     start: "top 50%",
+    //     end: "top 10%",
+    //     // pin: true,
+    //     // start: "top top",
+    //     // end: "+=100%",
+    //     // pinSpacing: true,
+    //     scrub: 1,
+    //     markers: true,
+    //   },
+    //   color: "#352f2f",
+    //   stagger: 0.1,
+    // });
+
+    const tween = gsap.from(splitText.chars, {
       color: "#352f2f",
       stagger: 0.1,
+    });
+
+    ScrollTrigger.create({
+      trigger: contRef.current,
+      start: "top 20%",
+      end: `+=${textRef.current.offsetHeight}`,
+      pin: true,
+      animation: tween,
+      scrub: true,
+      markers: true,
     });
   }, []);
 
   return (
-    <div ref={contRef} className="container">
+    <div ref={contRef} className="container bg-red-500">
       <p
         ref={textRef}
         className="font-bold text-white text-center"
