@@ -45,8 +45,8 @@
 }
 
 body {
-  background-color: #0C0C0D;
-  color: $white;
+  background-color: #0c0c0d;
+  color: $lime;
   // font-family: "Alegreya Sans", sans-serif;
   line-height: 1.3;
 
@@ -58,10 +58,10 @@ body {
     background-image: url(../img/noise-bg.png);
     background-repeat: repeat;
     background-size: 257px auto;
-    opacity: .5;
+    opacity: 0.5;
     pointer-events: none;
-    // z-index: 999999;
-}
+    z-index: 999999;
+  }
 }
 
 img,
@@ -177,23 +177,21 @@ section .section-content {
   padding: 5rem 0;
 }
 
-section .title {
+#section-title {
   position: relative;
-  color: var(--clr-brown);
-  margin-bottom: 1.5rem;
-}
-
-section .title::before {
-  position: absolute;
-  font-size: 2.5rem;
-  left: 0;
-  top: -1.5rem;
-  background: -webkit-linear-gradient(
-    rgba(53, 47, 47, 0.15) 10%,
-    rgba(240, 215, 178, 0)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  &::before {
+    position: absolute;
+    font-size: 2.5rem;
+    font-weight: bold;
+    left: 0;
+    top: -1.5rem;
+    background: -webkit-linear-gradient(
+      rgba(253, 253, 253, 0.15) 10%,
+      rgba(240, 215, 178, 0)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 /* --- Supported Devices --- */
@@ -219,7 +217,6 @@ section .title::before {
 }
 
 /* --- Other CSS Files --- */
-@import url(./About.css);
 @import url(./Services.css);
 @import url(./Projects.css);
 

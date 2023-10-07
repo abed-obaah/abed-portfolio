@@ -1,102 +1,41 @@
 import gsap from "gsap";
 import SplitType from "split-type";
 import { useEffect, useRef } from "react";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import SectionTitle from "@/components/SectionTitle";
 
 const About = () => {
-  const contRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     const splitText = new SplitType(textRef.current, { types: "chars, words" });
 
-    // gsap.from(splitText.chars, {
-    //   scrollTrigger: {
-    //     trigger: textRef.current,
-    //     start: "top 50%",
-    //     end: "top 10%",
-    //     // pin: true,
-    //     // start: "top top",
-    //     // end: "+=100%",
-    //     // pinSpacing: true,
-    //     scrub: 1,
-    //     markers: true,
-    //   },
-    //   color: "#352f2f",
-    //   stagger: 0.1,
-    // });
-
-    const tween = gsap.from(splitText.chars, {
-      color: "#352f2f",
+    gsap.from(splitText.chars, {
+      scrollTrigger: {
+        trigger: textRef.current,
+        start: "top 80%",
+        end: "top 20%",
+        scrub: 1,
+        markers: true,
+      },
+      color: "rgb(247, 254, 231, .25)",
       stagger: 0.1,
-    });
-
-    ScrollTrigger.create({
-      trigger: contRef.current,
-      start: "top 20%",
-      end: `+=${textRef.current.offsetHeight}`,
-      pin: true,
-      animation: tween,
-      scrub: true,
-      markers: true,
     });
   }, []);
 
   return (
-    <div ref={contRef} className="container bg-red-500">
-      <p
-        ref={textRef}
-        className="font-bold text-white text-center"
-        style={{ fontSize: "calc(2vw + 2vh)" }}
-      >
-        I'm a Frontend Developer based in Lagos. I derive interest in building
-        things of the web with great performance assured. With my degree in
-        Mathematics, I started off as a Maths Tutor for over 2 years before
-        switching to web development. Currently, I'm working at Outcess as a
-        Software Developer, where I build enhanced solution provided
-        applications.
-      </p>
-    </div>
-  );
-
-  return (
-    <section id="about">
-      <div className="section-content">
-        {/* <h2 className="title">About Me</h2> */}
-        <div className="about-details">
-          <p className="text-white text-5xl">
-            I'm a Frontend Developer based in Lagos. I derive interest in
-            building things of the web with great performance assured. With my
-            degree in Mathematics, I started off as a Maths Tutor for over 2
-            years before switching to web development. Currently, I'm working at
-            Outcess as a Software Developer, where I build enhanced solution
-            provided applications.
+    <div id="about" className="container">
+      <div className="flex gap-6">
+        <SectionTitle title="About Me" size="lg" />
+        <div className="flex-1 p-8 border border-[#1a1a1a] border-opacity-70">
+          <p ref={textRef} className={`text-lime-50 text-[calc(1vw_+_1vh)]`}>
+            Enthusiastic frontend developer with over 3 years of experience
+            building responsive and scalable web applications, with a particular
+            passion for developing innovative UI/UX solutions. I look forward to
+            applying this experience in my next role.
           </p>
-          {/* <p>Below are the Tech stack I work with:</p>
-          <ul>
-            <li>
-              <span>JavaScript</span>
-            </li>
-            <li>
-              <span>Node</span>
-            </li>
-            <li>
-              <span>React.JS</span>
-            </li>
-            <li>
-              <span>GraphQL</span>
-            </li>
-            <li>
-              <span>Redux</span>
-            </li>
-            <li>
-              <span>Git</span>
-            </li>
-          </ul>
-          <button>R&eacute;sum&eacute;</button> */}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
