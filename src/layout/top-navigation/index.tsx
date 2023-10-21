@@ -3,7 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import Logo from "@/assets/img/john.svg?react";
 import { useLenis } from "@studio-freight/react-lenis";
 
-import "./top_nav.scss";
+import "./nav.scss";
+import CustomButton from "@/components/CustomButton";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About" },
@@ -63,7 +64,7 @@ const TopNavigation = () => {
 
   return (
     <header
-      className="flex items-center justify-between h-16 px-4 md:px-12"
+      className="flex items-center justify-between h-16 px-4 md:px-12 border"
       style={{
         top: headerTop,
         right: margin,
@@ -73,7 +74,7 @@ const TopNavigation = () => {
       <a href="/" className="text-white">
         <Logo width={100} height={100} />
       </a>
-      <nav className={classNames({ "nav-visible": toggleNav })}>
+      {/* <nav className={classNames({ "nav-visible": toggleNav })}>
         <ul ref={ref} className="primary-nav">
           {NAV_ITEMS.map((item, idx) => (
             <li key={idx} className="flex h-fit" onClick={handleClickMenu}>
@@ -87,7 +88,27 @@ const TopNavigation = () => {
             </li>
           ))}
         </ul>
+      </nav> */}
+      <nav>
+        {NAV_ITEMS.map((item, idx) => (
+          <a
+            key={idx}
+            href={item.path}
+            className={classNames("text-white h-fit px-5", {
+              "after:absolute after:bg-orange-strong after:w-2 after:h-1":
+                0 === idx,
+            })}
+            onClick={() => lenis.scrollTo(item.path)}
+          >
+            {item.name}
+          </a>
+        ))}
       </nav>
+      <CustomButton
+        href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+        text="Résumé"
+        icon="file-link"
+      />
       <div
         className={toggleNav ? "menu-btn close" : "menu-btn"}
         onClick={() => setNavToggle(!toggleNav)}
@@ -101,3 +122,15 @@ const TopNavigation = () => {
 };
 
 export default TopNavigation;
+
+{
+  /* <li key={idx} className="flex h-fit" onClick={handleClickMenu}>
+  <a
+    href={item.path}
+    className="text-white h-fit px-5"
+    onClick={() => lenis.scrollTo(item.path)}
+  >
+    {item.name}
+  </a>
+</li>; */
+}
