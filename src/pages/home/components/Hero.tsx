@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section id="home">
+    <div id="home">
       <div className="section-content">
         <div className="home-content">
           <p className="hi-there">Hello! I'm</p>
@@ -41,7 +41,7 @@ const Hero = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

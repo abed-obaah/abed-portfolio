@@ -1,10 +1,10 @@
 import classNames from "classnames";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Logo from "@/assets/img/john.svg?react";
+import CustomButton from "@/components/CustomButton";
 import { useLenis } from "@studio-freight/react-lenis";
 
 import "./nav.scss";
-import CustomButton from "@/components/CustomButton";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About" },
@@ -15,12 +15,12 @@ const NAV_ITEMS = [
 
 const TopNavigation = () => {
   const lenis = useLenis();
-  const ref = useRef<HTMLUListElement>(null);
   const margin = "20px";
 
   const [offset, setOffset] = useState(0);
   const [headerTop, setHeaderTop] = useState(margin);
   const [toggleNav, setNavToggle] = useState(false);
+  const [isDirty, setIsDirty] = useState(false);
 
   useEffect(() => {
     window.onscroll = () => {
@@ -31,36 +31,39 @@ const TopNavigation = () => {
         setHeaderTop(margin);
       }
       setOffset(scrollUp);
+      handleScroll();
     };
   }, [offset]);
 
   // --- Hide vertical scroll when mobile menu is active --- //
   useEffect(() => {
     if (toggleNav) {
-      document.body.style.overflow = "hidden";
+      lenis.stop();
+    } else if (!toggleNav && isDirty) {
+      lenis.start();
     } else {
-      document.body.style.overflow = "auto";
+      setIsDirty(true);
     }
-  }, [toggleNav]);
+  }, [isDirty, lenis, toggleNav]);
 
-  // --- Handle clicking each menu item --- //
-  const handleClickMenu = () => {
-    setNavToggle(false);
-  };
-
-  // --- Handling clicking outside --- //
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) {
-        setNavToggle(false);
+  const handleScroll = () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll("header nav a");
+    sections.forEach((sec) => {
+      const top = window.scrollY;
+      const offset = sec.offsetTop - 150;
+      const height = sec.offsetHeight;
+      const id = sec.getAttribute("id");
+      if (top >= offset && top < offset + height) {
+        navLinks.forEach((links) => {
+          links.classList.remove("active");
+          document
+            .querySelector(`header nav a[href*="${id}"]`)
+            .classList.add("active");
+        });
       }
-    };
-
-    document.addEventListener("click", handleClickOutside, true);
-    return () => {
-      document.removeEventListener("click", handleClickOutside, true);
-    };
-  }, []);
+    });
+  };
 
   return (
     <header
@@ -74,43 +77,41 @@ const TopNavigation = () => {
       <a href="/" className="text-white">
         <Logo width={100} height={100} />
       </a>
-      {/* <nav className={classNames({ "nav-visible": toggleNav })}>
-        <ul ref={ref} className="primary-nav">
-          {NAV_ITEMS.map((item, idx) => (
-            <li key={idx} className="flex h-fit" onClick={handleClickMenu}>
-              <a
-                href={item.path}
-                className="text-white h-fit px-5"
-                onClick={() => lenis.scrollTo(item.path)}
-              >
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav> */}
-      <nav>
+      <nav
+        className={classNames("border-l", {
+          "nav-visible": toggleNav,
+        })}
+      >
         {NAV_ITEMS.map((item, idx) => (
           <a
             key={idx}
             href={item.path}
-            className={classNames("text-white h-fit px-5", {
-              "after:absolute after:bg-orange-strong after:w-2 after:h-1":
-                0 === idx,
-            })}
-            onClick={() => lenis.scrollTo(item.path)}
+            className="text-white/60 text-base h-fit px-5 transition-all"
+            onClick={() => {
+              setNavToggle(false);
+              lenis.scrollTo(item.path);
+            }}
           >
             {item.name}
           </a>
         ))}
+        <div className="block md:hidden">
+          <CustomButton
+            href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+            text="Résumé"
+            icon="file-link"
+          />
+        </div>
       </nav>
-      <CustomButton
-        href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
-        text="Résumé"
-        icon="file-link"
-      />
+      <div className="hidden md:block">
+        <CustomButton
+          href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+          text="Résumé"
+          icon="file-link"
+        />
+      </div>
       <div
-        className={toggleNav ? "menu-btn close" : "menu-btn"}
+        className={classNames("menu-btn", { close: toggleNav })}
         onClick={() => setNavToggle(!toggleNav)}
       >
         {[1, 2, 3].map((_, idx) => (
@@ -122,15 +123,3 @@ const TopNavigation = () => {
 };
 
 export default TopNavigation;
-
-{
-  /* <li key={idx} className="flex h-fit" onClick={handleClickMenu}>
-  <a
-    href={item.path}
-    className="text-white h-fit px-5"
-    onClick={() => lenis.scrollTo(item.path)}
-  >
-    {item.name}
-  </a>
-</li>; */
-}

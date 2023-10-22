@@ -28,11 +28,11 @@
 
 ::selection {
   background-color: rgb($strong-orange, 0.75);
-  color: $black;
+  color: $white;
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;

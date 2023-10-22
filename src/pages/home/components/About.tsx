@@ -15,7 +15,7 @@ const About = () => {
         start: "top 80%",
         end: "top 20%",
         scrub: 1,
-        markers: true,
+        markers: false,
       },
       color: "rgb(247, 254, 231, .25)",
       stagger: 0.1,
@@ -23,7 +23,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="about" className="container">
+    <section id="about" className="container">
       <div className="flex gap-6">
         <SectionTitle title="About Me" size="lg" />
         <div className="flex-1 p-8 border border-[#1a1a1a] border-opacity-70">
@@ -35,7 +35,7 @@ const About = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
