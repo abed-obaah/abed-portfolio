@@ -78,7 +78,7 @@ const TopNavigation = () => {
         <Logo width={100} height={100} />
       </a>
       <nav
-        className={classNames("border-l", {
+        className={classNames("border-l md:border-l-0", {
           "nav-visible": toggleNav,
         })}
       >

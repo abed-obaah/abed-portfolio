@@ -1,45 +1,13 @@
 const Hero = () => {
   return (
-    <div id="home">
-      <div className="section-content">
-        <div className="home-content">
-          <p className="hi-there">Hello! I'm</p>
-          <h1 className="my-name">John&nbsp;Adibe</h1>
-          <h1>Frontend Developer</h1>
-          <p>
-            Focused on building accessible & human-centered products. If you
-            require amazing hands-on skills on your project, I'm your guy.
-          </p>
-          <ul className="social-connect">
-            <li>
-              <a
-                href="https://github.com/johnphealipto"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {/* <FontAwesomeIcon icon={faGithub} /> */}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/johnadibe/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {/* <FontAwesomeIcon icon={faLinkedin} /> */}
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/johnphealipto"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {/* <FontAwesomeIcon icon={faTwitter} /> */}
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div id="home" className="container py-56">
+      <div className="flex flex-col gap-2">
+        <h1 className="text-4xl sm:text-6xl font-bold">John Adibe</h1>
+        <h2 className="text-xl sm:text-2xl">Frontend Engineer</h2>
+        <p className="text-white/60 text-base sm:text-lg font-light sm:max-w-md">
+          I am passionate about developing innovative UI & UX solutions while
+          maintaining responsive and scalable implementations.
+        </p>
       </div>
     </div>
   );

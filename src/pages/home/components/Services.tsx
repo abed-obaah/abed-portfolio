@@ -28,9 +28,7 @@ const Services = () => {
           {cards.map((item, index) => (
             <div key={index} className="card">
               <div className="card-header">
-                <div className="card-icon">
-                  {/* <FontAwesomeIcon icon={item.icon} /> */}
-                </div>
+                <div className="card-icon"></div>
                 <h3 className="card-title">{item.title}</h3>
               </div>
               <div className="card-body">{item.body}</div>
