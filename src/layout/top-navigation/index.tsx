@@ -38,7 +38,7 @@ const TopNavigation = () => {
   }, [offset]);
 
   useEffect(() => {
-    gsap.to(navRef.current.children, {
+    gsap.to(navRef.current!.children, {
       duration: 1,
       // y: "-50%",
       yPercent: "-50%",
@@ -69,7 +69,7 @@ const TopNavigation = () => {
         navLinks.forEach((links) => {
           links.classList.remove("active");
           document
-            .querySelector(`header nav a[href*="${id}"]`)
+            .querySelector(`header nav a[href*="${id}"]`)!
             .classList.add("active");
         });
       }

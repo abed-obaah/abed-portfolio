@@ -1,4 +1,4 @@
-const SectionTitle = ({ title }) => {
+const SectionTitle = ({ title }: { title: string }) => {
   const content = title.toLowerCase();
 
   return (
