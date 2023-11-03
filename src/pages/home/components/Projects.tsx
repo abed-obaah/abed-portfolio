@@ -1,6 +1,9 @@
+import SectionTitle from "@/components/SectionTitle";
+
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className="container py-56">
+      <SectionTitle title="About Me" />
       <div className="section-content">
         <div className="project-title">
           <h2 className="title">My Projects</h2>

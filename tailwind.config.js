@@ -12,6 +12,45 @@ export default {
       borderColor: {
         DEFAULT: "#1a1a1a",
       },
+      animation: {
+        title: "title 3s ease-out forwards",
+        "fade-in": "fade-in 3s ease-in-out",
+      },
+      keyframes: {
+        title: {
+          "0%": {
+            opacity: 0,
+            "line-height": "0%",
+            "letter-spacing": "0.25em",
+            transform: "scale(1.25)",
+          },
+          "25%": {
+            opacity: 0,
+            "line-height": "0%",
+            transform: "scale(1.25)",
+          },
+          "80%": {
+            opacity: 1,
+            "line-height": "70%",
+            transform: "scale(1.25)",
+          },
+          "100%": {
+            opacity: 1,
+            "line-height": "100%",
+          },
+        },
+        "fade-in": {
+          "0%": {
+            opacity: 0,
+          },
+          "75%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 1,
+          },
+        },
+      },
     },
   },
   plugins: [],

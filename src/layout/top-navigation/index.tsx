@@ -1,14 +1,14 @@
 import classNames from "classnames";
-import { useEffect, useState } from "react";
-import Logo from "@/assets/img/john.svg?react";
+import { useEffect, useRef, useState } from "react";
+import Logo from "@/assets/icons/john.svg?react";
 import CustomButton from "@/components/CustomButton";
 import { useLenis } from "@studio-freight/react-lenis";
+import gsap from "gsap";
 
 import "./nav.scss";
 
 const NAV_ITEMS = [
   { path: "#about", name: "About" },
-  { path: "#services", name: "Services" },
   { path: "#projects", name: "Projects" },
   { path: "#contact", name: "Contact" },
 ];
@@ -16,6 +16,8 @@ const NAV_ITEMS = [
 const TopNavigation = () => {
   const lenis = useLenis();
   const margin = "20px";
+
+  const navRef = useRef<HTMLElement>(null);
 
   const [offset, setOffset] = useState(0);
   const [headerTop, setHeaderTop] = useState(margin);
@@ -34,6 +36,15 @@ const TopNavigation = () => {
       handleScroll();
     };
   }, [offset]);
+
+  useEffect(() => {
+    gsap.to(navRef.current.children, {
+      duration: 1,
+      // y: "-50%",
+      yPercent: "-50%",
+      stagger: 0.5,
+    });
+  }, []);
 
   // --- Hide vertical scroll when mobile menu is active --- //
   useEffect(() => {
@@ -67,7 +78,7 @@ const TopNavigation = () => {
 
   return (
     <header
-      className="flex items-center justify-between h-16 px-4 md:px-12 border"
+      className="flex items-center justify-between h-16 px-4 md:px-12 border animate-fade-in"
       style={{
         top: headerTop,
         right: margin,
@@ -78,6 +89,7 @@ const TopNavigation = () => {
         <Logo width={100} height={100} />
       </a>
       <nav
+        ref={navRef}
         className={classNames("border-l md:border-l-0", {
           "nav-visible": toggleNav,
         })}
@@ -86,7 +98,7 @@ const TopNavigation = () => {
           <a
             key={idx}
             href={item.path}
-            className="text-white/60 text-base h-fit px-5 transition-all"
+            className="text-white/50 text-base h-fit px-5 transition-all"
             onClick={() => {
               setNavToggle(false);
               lenis.scrollTo(item.path);

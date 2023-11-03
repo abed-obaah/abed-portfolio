@@ -21,12 +21,12 @@ const About = () => {
   // }, []);
 
   return (
-    <section id="about" className="container">
+    <section id="about" className="container animate-fade-in">
       <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 bg-white/[.025] p-7 sm:p-14 md:px-20 md:py-14 border">
         <SectionTitle title="About Me" />
         <div
           ref={textRef}
-          className="flex flex-col gap-4 text-white/60 md:w-9/12 text-lg"
+          className="flex flex-col gap-4 text-white/50 md:w-9/12 text-lg"
         >
           <p>
             Enthusiastic frontend developer with over 3 years of experience
