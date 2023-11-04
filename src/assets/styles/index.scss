@@ -34,11 +34,15 @@
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background-image: url(../noise-bg.png);
+  background-repeat: repeat;
+  background-size: 257px auto;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.5);
+  background: #3a3a3a;
 }
 
 body {

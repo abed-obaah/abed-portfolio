@@ -21,7 +21,6 @@ export default {
           "0%": {
             opacity: 0,
             "line-height": "0%",
-            "letter-spacing": "0.25em",
             transform: "scale(1.25)",
           },
           "25%": {
@@ -31,8 +30,7 @@ export default {
           },
           "80%": {
             opacity: 1,
-            "line-height": "70%",
-            transform: "scale(1.25)",
+            "line-height": "50%",
           },
           "100%": {
             opacity: 1,

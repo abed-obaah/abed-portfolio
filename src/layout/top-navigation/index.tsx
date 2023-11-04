@@ -1,9 +1,7 @@
 import classNames from "classnames";
-import { useEffect, useRef, useState } from "react";
 import Logo from "@/assets/icons/john.svg?react";
 import CustomButton from "@/components/CustomButton";
-import { useLenis } from "@studio-freight/react-lenis";
-import gsap from "gsap";
+import useTopNavigation from "./hooks/useTopNavigation";
 
 import "./nav.scss";
 
@@ -14,73 +12,13 @@ const NAV_ITEMS = [
 ];
 
 const TopNavigation = () => {
-  const lenis = useLenis();
-  const margin = "20px";
-
-  const navRef = useRef<HTMLElement>(null);
-
-  const [offset, setOffset] = useState(0);
-  const [headerTop, setHeaderTop] = useState(margin);
-  const [toggleNav, setNavToggle] = useState(false);
-  const [isDirty, setIsDirty] = useState(false);
-
-  useEffect(() => {
-    window.onscroll = () => {
-      const scrollUp = window.scrollY;
-      if (scrollUp > offset) {
-        setHeaderTop("-4.5rem");
-      } else {
-        setHeaderTop(margin);
-      }
-      setOffset(scrollUp);
-      handleScroll();
-    };
-  }, [offset]);
-
-  useEffect(() => {
-    gsap.to(navRef.current!.children, {
-      duration: 1,
-      // y: "-50%",
-      yPercent: "-50%",
-      stagger: 0.5,
-    });
-  }, []);
-
-  // --- Hide vertical scroll when mobile menu is active --- //
-  useEffect(() => {
-    if (toggleNav) {
-      lenis.stop();
-    } else if (!toggleNav && isDirty) {
-      lenis.start();
-    } else {
-      setIsDirty(true);
-    }
-  }, [isDirty, lenis, toggleNav]);
-
-  const handleScroll = () => {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll("header nav a");
-    sections.forEach((sec) => {
-      const top = window.scrollY;
-      const offset = sec.offsetTop - 150;
-      const height = sec.offsetHeight;
-      const id = sec.getAttribute("id");
-      if (top >= offset && top < offset + height) {
-        navLinks.forEach((links) => {
-          links.classList.remove("active");
-          document
-            .querySelector(`header nav a[href*="${id}"]`)!
-            .classList.add("active");
-        });
-      }
-    });
-  };
+  const { menu, top, margin, setMenu, lenis } = useTopNavigation();
 
   return (
     <header
       className="flex items-center justify-between h-16 px-4 md:px-12 border animate-fade-in"
       style={{
-        top: headerTop,
+        top,
         right: margin,
         left: margin,
       }}
@@ -89,9 +27,8 @@ const TopNavigation = () => {
         <Logo width={100} height={100} />
       </a>
       <nav
-        ref={navRef}
         className={classNames("border-l md:border-l-0", {
-          "nav-visible": toggleNav,
+          "nav-visible": menu,
         })}
       >
         {NAV_ITEMS.map((item, idx) => (
@@ -100,14 +37,14 @@ const TopNavigation = () => {
             href={item.path}
             className="text-white/50 text-base h-fit px-5 transition-all"
             onClick={() => {
-              setNavToggle(false);
+              setMenu(false);
               lenis.scrollTo(item.path);
             }}
           >
             {item.name}
           </a>
         ))}
-        <div className="block md:hidden">
+        <div className="block md:hidden mt-5">
           <CustomButton
             href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
             text="Résumé"
@@ -123,8 +60,8 @@ const TopNavigation = () => {
         />
       </div>
       <div
-        className={classNames("menu-btn", { close: toggleNav })}
-        onClick={() => setNavToggle(!toggleNav)}
+        className={classNames("menu-btn", { close: menu })}
+        onClick={() => setMenu(!menu)}
       >
         {[1, 2, 3].map((_, idx) => (
           <div key={idx} className="btn-line bg-white" />

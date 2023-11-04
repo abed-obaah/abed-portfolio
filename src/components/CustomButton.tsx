@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import { FileDownloadIcon, FileLinkIcon } from "@/assets/icons";
+import { FileLinkIcon } from "@/assets/icons";
 
-type Icons = "file-download" | "file-link";
+type Icons = "file-link";
 
 interface IButton {
   text?: string;
@@ -17,7 +17,6 @@ interface IButton {
 }
 
 const ICONS_MAPPER: Record<Icons, React.ReactNode> = {
-  "file-download": <FileDownloadIcon width={20} height={20} />,
   "file-link": <FileLinkIcon width={20} height={20} />,
 };
 
@@ -34,7 +33,7 @@ const CustomButton: React.FC<IButton> = ({
   icon,
 }) => {
   const btnClassnames = classNames(
-    "bg-orange-strong !text-dark flex items-center justify-center gap-3 px-5 font-medium hover:shadow-2xl hover:shadow-orange-strong select-none transition",
+    "bg-orange-strong text-white flex items-center justify-center gap-3 px-6 hover:shadow-2xl hover:shadow-orange-strong select-none transition",
     {
       "h-9 text-base": size === "sm",
       "h-12": size === "md",
