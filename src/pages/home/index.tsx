@@ -37,7 +37,7 @@ const Home = () => {
         <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
           <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-10 border-b">
             <SectionTitle title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
+            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
               <p>
                 Enthusiastic frontend developer with over 3 years of experience
                 building responsive and scalable web applications, with a
@@ -60,7 +60,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="container py-56">
+      <section id="projects" className="container py-40">
         <div className="max-w-2xl">
           <SectionTitle title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">

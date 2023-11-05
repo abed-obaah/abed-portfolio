@@ -64,7 +64,7 @@ const TopNavigation = () => {
         onClick={() => setMenu(!menu)}
       >
         {[1, 2, 3].map((_, idx) => (
-          <div key={idx} className="btn-line bg-white" />
+          <div key={idx} className="btn-line bg-zinc-50" />
         ))}
       </div>
     </header>

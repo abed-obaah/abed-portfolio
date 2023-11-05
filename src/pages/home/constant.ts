@@ -23,14 +23,14 @@ export const PROJECTS = [
     image: IslandLuxury,
     desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property.",
     date: "Feb 10, 2022",
-    stacks: ["React.js", "Javascript"],
+    stacks: ["React.js", "Javascript", "CSS", "Redux"],
     live: "https://island-luxury-demo.netlify.app/",
   },
   {
     name: "AK Pressure Wash",
     desc: "Trusted pressure washing service provider.",
     date: "Jul 30, 2023",
-    stacks: ["Next.js", "Typescript", "Tailwind CSS", "Google Map"],
+    stacks: ["Next.js", "Typescript", "Tailwind CSS", "SASS", "Google Map"],
     live: "https://www.akpressurewash.com/",
   },
   {

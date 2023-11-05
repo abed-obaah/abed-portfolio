@@ -14,7 +14,7 @@ const SectionTitle = ({
       {title}
       <span
         className={classNames(
-          "absolute text-4xl sm:text-5xl font-bold left-0 -top-4 sm:-top-6 bg-clip-text text-transparent bg-gradient-to-b from-white/10",
+          "absolute text-4xl sm:text-5xl font-bold left-0 -top-4 sm:-top-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-800",
           { "md:left-1/2 md:-translate-x-1/2": align === "center" }
         )}
       >

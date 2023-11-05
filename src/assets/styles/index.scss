@@ -20,10 +20,6 @@
   --clr-text: rgba(53, 47, 47, 0.9);
   --clr-light: #f0d7b2;
   --clr-orange: #ca3300;
-  // --clr-brown: #999999;
-  // --clr-text: rgba(204, 204, 204, 0.9);
-  // --clr-light: #f0d7b2;
-  // $strong-orange: $strong-orange;
 }
 
 ::selection {
@@ -103,34 +99,5 @@ body {
   }
   button::before {
     transition: transform 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
-  }
-}
-
-/*** Media Queries ***/
-@media only screen and (max-width: 768px) {
-  section {
-    padding: 0 2rem;
-  }
-  p,
-  span,
-  a {
-    font-size: 1rem;
-  }
-}
-
-// Scroll Driven Animation
-@keyframes slide-fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(5vh);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .card {
-    view-timeline-name: --item-timeline;
-    animation: slide-fade-in both;
-    animation-timeline: --item-timeline;
-    animation-range: contain 0% contain 0%;
   }
 }
