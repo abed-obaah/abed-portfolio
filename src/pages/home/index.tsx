@@ -2,11 +2,12 @@ import SectionTitle from "@/components/SectionTitle";
 import { PROJECTS, SOCIAL_LINKS } from "./constant";
 
 import "./home.scss";
+import ProjectCard from "./components/ProjectCard";
 
 const Home = () => {
   return (
     <>
-      <section id="hero" className="container flex py-40 min-h-[80vh]">
+      <section id="hero" className="container flex py-40 min-h-[70vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
@@ -14,7 +15,7 @@ const Home = () => {
           <h2 className="text-lg sm:text-2xl animate-fade-in">
             Frontend Engineer
           </h2>
-          <p className="text-white/50 text-base sm:text-lg font-light max-w-lg animate-fade-in">
+          <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
             I am passionate about developing cutting-edge solutions and
             implementing scalable web and mobile applications.
           </p>
@@ -23,7 +24,7 @@ const Home = () => {
               <a
                 href={item.link}
                 key={idx}
-                className="text-white/80"
+                className="text-zinc-400"
                 target="_blank"
               >
                 <item.icon width={25} height={25} />
@@ -33,10 +34,10 @@ const Home = () => {
         </div>
       </section>
       <section id="about" className="container animate-fade-in">
-        <div className="bg-white/[.015] p-7 sm:p-14 md:px-20 md:py-14 border">
+        <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
           <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-10 border-b">
             <SectionTitle title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-white/50 md:w-9/12 text-sm sm:text-base">
+            <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
                 Enthusiastic frontend developer with over 3 years of experience
                 building responsive and scalable web applications, with a
@@ -62,18 +63,21 @@ const Home = () => {
       <section id="projects" className="container py-56">
         <div className="max-w-2xl">
           <SectionTitle title="Projects" />
-          <p className="text-white/50 text-base mt-4">
+          <p className="text-zinc-500 text-lg mt-4">
             I have worked on some projects but these are the amazing ones.
           </p>
         </div>
-        <div className="mt-14">
-          {PROJECTS.map((item, idx) => (
-            <div key={idx} className="bg-white/[.015] border p-4 md:p-8">
-              <h3 className="text-white font-bold text-2xl sm:text-3xl whitespace-nowrap">
-                {item.name}
-              </h3>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
+          <div className="grid grid-cols-1 gap-8">
+            {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
+              <ProjectCard key={idx} project={project} />
+            ))}
+          </div>
+          <div className="grid grid-cols-1 gap-8">
+            {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
+              <ProjectCard key={idx} project={project} />
+            ))}
+          </div>
         </div>
       </section>
     </>

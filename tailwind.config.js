@@ -7,7 +7,8 @@ export default {
         orange: {
           strong: "#ca3300",
         },
-        dark: "#0c0c0d",
+        dark: "#111",
+        card: " rgb(255 255 255 / .015)",
       },
       borderColor: {
         DEFAULT: "#1a1a1a",

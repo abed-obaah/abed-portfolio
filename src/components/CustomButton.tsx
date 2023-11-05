@@ -33,7 +33,7 @@ const CustomButton: React.FC<IButton> = ({
   icon,
 }) => {
   const btnClassnames = classNames(
-    "bg-orange-strong text-white flex items-center justify-center gap-3 px-6 hover:shadow-2xl hover:shadow-orange-strong select-none transition",
+    "bg-orange-strong text-dark font-semibold flex items-center justify-center gap-3 px-8 hover:shadow-2xl hover:shadow-orange-strong select-none transition",
     {
       "h-9 text-base": size === "sm",
       "h-12": size === "md",

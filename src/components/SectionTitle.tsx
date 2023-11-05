@@ -10,7 +10,7 @@ const SectionTitle = ({
   const content = title.toLowerCase();
 
   return (
-    <h2 className="text-white relative font-bold text-3xl sm:text-4xl mt-3 whitespace-nowrap">
+    <h2 className="text-zinc-50 relative font-bold text-3xl sm:text-4xl mt-3 whitespace-nowrap">
       {title}
       <span
         className={classNames(

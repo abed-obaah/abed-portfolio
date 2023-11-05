@@ -23,7 +23,7 @@ const TopNavigation = () => {
         left: margin,
       }}
     >
-      <a href="/" className="text-white">
+      <a href="/" className="text-zinc-50">
         <Logo width={100} height={100} />
       </a>
       <nav
@@ -35,7 +35,7 @@ const TopNavigation = () => {
           <a
             key={idx}
             href={item.path}
-            className="text-white/50 text-base h-fit px-5 transition-all"
+            className="text-zinc-500 text-base h-fit px-5 transition-all"
             onClick={() => {
               setMenu(false);
               lenis.scrollTo(item.path);
