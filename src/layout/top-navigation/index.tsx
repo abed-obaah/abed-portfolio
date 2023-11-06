@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import Logo from "@/assets/icons/john.svg?react";
-import CustomButton from "@/components/CustomButton";
+import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
 
 import "./nav.scss";

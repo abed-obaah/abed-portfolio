@@ -1,8 +1,6 @@
-import SectionTitle from "@/components/SectionTitle";
-import { PROJECTS, SOCIAL_LINKS } from "./constant";
-
-import "./home.scss";
-import ProjectCard from "./components/ProjectCard";
+import Title from "@/components/title";
+import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "./constant";
+import ProjectCard from "../components/project";
 
 const Home = () => {
   return (
@@ -33,11 +31,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="about" className="container animate-fade-in">
+      <section
+        id="about"
+        className="container pt-10 pb-20 md:pt-20 md:pb-40 animate-fade-in"
+      >
         <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
-          <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-10 border-b">
-            <SectionTitle title="About Me" align="center" />
-            <div className="flex flex-col gap-4 text-zinc-400 md:w-9/12 text-sm sm:text-base">
+          <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-8 mb-8 border-b">
+            <Title title="About Me" align="center" />
+            <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
                 Enthusiastic frontend developer with over 3 years of experience
                 building responsive and scalable web applications, with a
@@ -51,33 +52,63 @@ const Home = () => {
                 look forward to applying this experience in my next role.
               </p>
               <p>
-                Enthusiastic frontend developer with over 3 years of experience
-                building responsive and scalable web applications, with a
-                particular passion for developing innovative UI/UX solutions. I
-                look forward to applying this experience in my next role.
+                During my spare time, I enjoy{" "}
+                <span className="text-zinc-50">gaming</span> or playing the{" "}
+                <span className="text-zinc-50">guitar</span> mostly taking a
+                short mental break.
               </p>
             </div>
           </div>
+          <div className="flex flex-col gap-8">
+            {TECH_STACKS_TOOLS.map((tech, idx) => (
+              <div key={idx}>
+                <h3 className="text-zinc-50 font-bold text-lg sm:text-xl mb-2">
+                  {tech.title}:
+                </h3>
+                <div className="flex gap-4 flex-wrap">
+                  {tech.collections.map((item, idx) => (
+                    <div key={idx} className="flex gap-1">
+                      <item.icon width={20} height={20} />
+                      <span className="text-zinc-500 text-sm sm:text-base">
+                        {item.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
-      <section id="projects" className="container py-40">
+      <section
+        id="projects"
+        className="container pt-10 pb-20 md:pt-20 md:pb-40"
+      >
         <div className="max-w-2xl">
-          <SectionTitle title="Projects" />
+          <Title title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">
             I have worked on some projects but these are the amazing ones.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
-          <div className="grid grid-cols-1 gap-8">
+          <div className="flex flex-col gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
               <ProjectCard key={idx} project={project} />
             ))}
           </div>
-          <div className="grid grid-cols-1 gap-8">
+          <div className="flex flex-col gap-8">
             {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
               <ProjectCard key={idx} project={project} />
             ))}
           </div>
+        </div>
+      </section>
+      <section id="contact" className="container pt-10 pb-20 md:pt-20 md:pb-40">
+        <div className="md:text-center">
+          <Title title="Contact" align="center" />
+          <p className="text-zinc-500 text-lg mt-4">
+            Don't be a stranger, let's get in touch! 🤝
+          </p>
         </div>
       </section>
     </>

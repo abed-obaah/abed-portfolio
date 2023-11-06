@@ -1,4 +1,26 @@
-import { GithubIcon, LinkedinIcon, TwitterXIcon } from "@/assets/icons";
+import {
+  AndroidStudioIcon,
+  BlenderIcon,
+  CssIcon,
+  ExpoIcon,
+  FigmaIcon,
+  FirebaseIcon,
+  GitIcon,
+  GithubIcon,
+  GraphqlIcon,
+  HtmlIcon,
+  JavascriptIcon,
+  LinkedinIcon,
+  NextJSIcon,
+  ReactIcon,
+  ReduxIcon,
+  SassIcon,
+  TailwindIcon,
+  ThreeJSIcon,
+  TwitterXIcon,
+  TypescriptIcon,
+  VscodeIcon,
+} from "@/assets/icons";
 import IslandLuxury from "@/assets/island-luxury.png";
 import Em2geeFoods from "@/assets/em2gee-foods.png";
 
@@ -47,5 +69,36 @@ export const PROJECTS = [
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],
     live: "https://johnphealipto.github.io/em2gee-foods/",
     code: "https://github.com/johnphealipto/em2gee-foods",
+  },
+];
+
+export const TECH_STACKS_TOOLS = [
+  {
+    title: "Technologies",
+    collections: [
+      { icon: JavascriptIcon, name: "Javascript" },
+      { icon: TypescriptIcon, name: "Typescript" },
+      { icon: ReactIcon, name: "React.js" },
+      { icon: NextJSIcon, name: "Next.js" },
+      { icon: ReduxIcon, name: "Redux" },
+      { icon: ExpoIcon, name: "React Native (Expo)" },
+      { icon: SassIcon, name: "SASS" },
+      { icon: TailwindIcon, name: "Tailwind CSS" },
+      { icon: ThreeJSIcon, name: "Three.js" },
+      { icon: GraphqlIcon, name: "GraphQL" },
+      { icon: GitIcon, name: "Git" },
+      { icon: FirebaseIcon, name: "Firebase" },
+      { icon: HtmlIcon, name: "HTML" },
+      { icon: CssIcon, name: "CSS" },
+    ],
+  },
+  {
+    title: "Tools",
+    collections: [
+      { icon: VscodeIcon, name: "VSCode" },
+      { icon: FigmaIcon, name: "Figma" },
+      { icon: BlenderIcon, name: "Blender" },
+      { icon: AndroidStudioIcon, name: "Android Studio" },
+    ],
   },
 ];

@@ -3,7 +3,7 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 import Layout from "./layout";
-import Home from "./pages/home";
+import Home from "./pages";
 
 gsap.registerPlugin(ScrollTrigger);
 
