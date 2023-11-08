@@ -7,21 +7,21 @@ const ProjectCard = ({ project }) => {
         <span className="text-zinc-400 text-sm">{project.date}</span>
         <div className="flex gap-4 items-center">
           {project.code ? (
-            <a href={project.code} target="_blank">
-              <GithubIcon
-                className="text-zinc-500 cursor-pointer"
-                width={20}
-                height={20}
-              />
+            <a
+              href={project.code}
+              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
+              target="_blank"
+            >
+              <GithubIcon width={20} height={20} />
             </a>
           ) : null}
           {project.live ? (
-            <a href={project.live} target="_blank">
-              <LinkSquareIcon
-                className="text-zinc-500 cursor-pointer"
-                width={20}
-                height={20}
-              />
+            <a
+              href={project.live}
+              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
+              target="_blank"
+            >
+              <LinkSquareIcon width={20} height={20} />
             </a>
           ) : null}
         </div>

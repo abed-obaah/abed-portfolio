@@ -34,7 +34,7 @@
 ::-webkit-scrollbar-track {
   background-image: url(../noise.png);
   background-repeat: repeat;
-  background-size: 257px auto;
+  background-size: 250px 250px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -54,7 +54,7 @@ body {
     inset: 0;
     background-image: url(../noise.png);
     background-repeat: repeat;
-    background-size: 257px auto;
+    background-size: 250px 250px;
     opacity: 0.5;
     pointer-events: none;
     z-index: 999999;

@@ -21,6 +21,8 @@ import ThreeJSIcon from "./three-js.svg?react";
 import AndroidStudioIcon from "./android-studio.svg?react";
 import FirebaseIcon from "./firebase.svg?react";
 import ExpoIcon from "./expo.svg?react";
+import CalendarIcon from "./calendar.svg?react";
+import TelephoneIcon from "./telephone.svg?react";
 
 export {
   FileLinkIcon,
@@ -46,4 +48,6 @@ export {
   AndroidStudioIcon,
   FirebaseIcon,
   ExpoIcon,
+  CalendarIcon,
+  TelephoneIcon,
 };

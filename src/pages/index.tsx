@@ -1,6 +1,8 @@
 import Title from "@/components/title";
 import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "./constant";
 import ProjectCard from "../components/project";
+import CustomButton from "@/components/button";
+import CustomLink from "@/components/link";
 
 const Home = () => {
   return (
@@ -22,7 +24,7 @@ const Home = () => {
               <a
                 href={item.link}
                 key={idx}
-                className="text-zinc-400"
+                className="text-zinc-400 transition duration-300 hover:text-orange-strong"
                 target="_blank"
               >
                 <item.icon width={25} height={25} />
@@ -42,20 +44,7 @@ const Home = () => {
               <p>
                 Enthusiastic frontend developer with over 3 years of experience
                 building responsive and scalable web applications, with a
-                particular passion for developing innovative UI/UX solutions. I
-                look forward to applying this experience in my next role.
-              </p>
-              <p>
-                Enthusiastic frontend developer with over 3 years of experience
-                building responsive and scalable web applications, with a
-                particular passion for developing innovative UI/UX solutions. I
-                look forward to applying this experience in my next role.
-              </p>
-              <p>
-                During my spare time, I enjoy{" "}
-                <span className="text-zinc-50">gaming</span> or playing the{" "}
-                <span className="text-zinc-50">guitar</span> mostly taking a
-                short mental break.
+                particular passion for developing innovative UI/UX solutions.
               </p>
             </div>
           </div>
@@ -104,11 +93,25 @@ const Home = () => {
         </div>
       </section>
       <section id="contact" className="container pt-10 pb-20 md:pt-20 md:pb-40">
-        <div className="md:text-center">
-          <Title title="Contact" align="center" />
-          <p className="text-zinc-500 text-lg mt-4">
-            Don't be a stranger, let's get in touch! 🤝
+        <div className="flex flex-col gap-7 items-center text-center mt-14">
+          <Title title="Contact" align="center" ignore />
+          <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
+            If you have any questions or ideas, you can call me at{" "}
+            <CustomLink text="(234) 814-172-6099" href="tel:2348141726099" /> or
+            inbox me at{" "}
+            <CustomLink
+              text="johnadibe450@gmail.com"
+              href="mailto:johnadibe450@gmail.com"
+            />
           </p>
+          <p>OR</p>
+          <div className="flex text-center items-center">
+            <CustomButton
+              text="Meeting with John"
+              href="https://calendly.com/john-adibe"
+              icon="calendar"
+            />
+          </div>
         </div>
       </section>
     </>

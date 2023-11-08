@@ -1,7 +1,7 @@
 import classNames from "classnames";
-import { FileLinkIcon } from "@/assets/icons";
+import { CalendarIcon, FileLinkIcon } from "@/assets/icons";
 
-type Icons = "file-link";
+type Icons = "file-link" | "calendar";
 
 interface IButton {
   text?: string;
@@ -16,8 +16,12 @@ interface IButton {
   fullWidth?: boolean;
 }
 
-const ICONS_MAPPER: Record<Icons, React.ReactNode> = {
-  "file-link": <FileLinkIcon width={20} height={20} />,
+const ICONS_MAPPER: Record<
+  Icons,
+  React.FunctionComponent<React.SVGProps<SVGSVGElement>>
+> = {
+  "file-link": FileLinkIcon,
+  calendar: CalendarIcon,
 };
 
 const CustomButton: React.FC<IButton> = ({
@@ -43,11 +47,13 @@ const CustomButton: React.FC<IButton> = ({
     }
   );
 
+  const IconNode = ICONS_MAPPER[icon];
+
   if (href) {
     return (
       <a href={href} className={btnClassnames} target="_blank">
         {text}
-        {icon ? ICONS_MAPPER[icon] : null}
+        {icon ? <IconNode width={20} height={20} /> : null}
       </a>
     );
   }
@@ -60,7 +66,7 @@ const CustomButton: React.FC<IButton> = ({
       disabled={disabled || isLoading}
     >
       {text}
-      {icon ? ICONS_MAPPER[icon] : null}
+      {icon ? <IconNode width={20} height={20} /> : null}
     </button>
   );
 };
