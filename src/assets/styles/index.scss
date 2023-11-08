@@ -61,43 +61,42 @@ body {
   }
 }
 
-.a_link {
+.link {
   position: relative;
   color: $strong-orange;
-}
-.a_link::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: $strong-orange;
-  transform-origin: right;
-  transform: scaleX(0);
-}
-.a_link:hover::before,
-.a_link:focus::before {
-  transform-origin: left;
-  transform: scaleX(1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    height: 0.5px;
+    background-color: $strong-orange;
+    transform-origin: right;
+    transform: scaleX(0);
+
+    @supports (transition: transition) {
+      transition: transform 0.5s cubic-bezier(1, 0.18, 0.6, 1.1);
+    }
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
 }
 
 .container {
   $root-padding: 20px;
   width: 100%;
   max-width: calc(1234px + $root-padding * 2);
-  // min-height: 588px;
   margin: 0 auto;
   padding-left: $root-padding;
   padding-right: $root-padding;
 }
 
 /* --- Supported Devices --- */
-@supports (transition: transition) {
-  .a_link::before {
-    transition: transform 0.5s cubic-bezier(1, 0.18, 0.6, 1.1);
-  }
-  button::before {
-    transition: transform 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
-  }
-}

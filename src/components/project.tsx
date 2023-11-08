@@ -1,4 +1,4 @@
-import { GithubIcon, LinkSquareIcon } from "@/assets/icons";
+import { FigmaOutlinedIcon, GithubIcon, LinkSquareIcon } from "@/assets/icons";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -6,6 +6,15 @@ const ProjectCard = ({ project }) => {
       <div className="flex justify-between items-center">
         <span className="text-zinc-400 text-sm">{project.date}</span>
         <div className="flex gap-4 items-center">
+          {project.figma ? (
+            <a
+              href={project.figma}
+              className="text-zinc-500 transition duration-300 hover:text-orange-strong"
+              target="_blank"
+            >
+              <FigmaOutlinedIcon width={21} height={21} />
+            </a>
+          ) : null}
           {project.code ? (
             <a
               href={project.code}

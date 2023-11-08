@@ -23,6 +23,7 @@ import FirebaseIcon from "./firebase.svg?react";
 import ExpoIcon from "./expo.svg?react";
 import CalendarIcon from "./calendar.svg?react";
 import TelephoneIcon from "./telephone.svg?react";
+import FigmaOutlinedIcon from "./figma-outlined.svg?react";
 
 export {
   FileLinkIcon,
@@ -50,4 +51,5 @@ export {
   ExpoIcon,
   CalendarIcon,
   TelephoneIcon,
+  FigmaOutlinedIcon,
 };

@@ -43,10 +43,12 @@ export const PROJECTS = [
   {
     name: "Island Luxury Property Listings",
     image: IslandLuxury,
-    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property.",
+    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property. Designed and developed the website together with its admin dashboard.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
     live: "https://island-luxury-demo.netlify.app/",
+    figma:
+      "https://www.figma.com/file/oNGu5qBAb4nsXegrFb0rcF/Island-Luxury?type=design&node-id=0%3A1&mode=design&t=7WflUGt9N3PD7N8f-1",
   },
   {
     name: "AK Pressure Wash",
@@ -56,10 +58,18 @@ export const PROJECTS = [
     live: "https://www.akpressurewash.com/",
   },
   {
-    name: "AK Pressure Wash",
-    desc: "Trusted pressure washing service provider",
-    date: "Feb 10, 2022",
-    stacks: ["React.js"],
+    name: "johnadibe.vercel.app",
+    desc: "My personal portfolio 😎.",
+    date: "Nov 10, 2023",
+    stacks: [
+      "React.js + Vite.js",
+      "Typescript",
+      "SASS",
+      "Tailwind CSS",
+      "Lenis (smooth scrolling)",
+      "Vercel",
+    ],
+    code: "https://github.com/johnphealipto/portfolio",
   },
   {
     name: "Em2gee Foods",

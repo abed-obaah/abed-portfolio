@@ -24,8 +24,8 @@ const CustomLink: React.FC<CustomLinkProps> = ({
   // const IconComponent = ICONS_MAPPER[icon];
 
   return (
-    <a href={href} className="text-orange-strong hover:underline">
-      <span className="whitespace-nowrap">{text}</span>
+    <a href={href} className="link whitespace-nowrap">
+      {text}
       {/* <IconComponent className="inline" width={18} height={18} /> */}
     </a>
   );

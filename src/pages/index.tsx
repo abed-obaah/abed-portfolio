@@ -7,7 +7,7 @@ import CustomLink from "@/components/link";
 const Home = () => {
   return (
     <>
-      <section id="hero" className="container flex py-40 min-h-[70vh]">
+      <section id="hero" className="container flex pt-20 min-h-[70vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
             John Adibe
@@ -33,10 +33,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section
-        id="about"
-        className="container pt-10 pb-20 md:pt-20 md:pb-40 animate-fade-in"
-      >
+      <section id="about" className="container pb-20 animate-fade-in">
         <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
           <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
@@ -69,14 +66,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section
-        id="projects"
-        className="container pt-10 pb-20 md:pt-20 md:pb-40"
-      >
+      <section id="projects" className="container py-20">
         <div className="max-w-2xl">
           <Title title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">
-            I have worked on some projects but these are the amazing ones.
+            These are some of the amazing projects I've worked or collaborated
+            on.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
@@ -92,17 +87,18 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="contact" className="container pt-10 pb-20 md:pt-20 md:pb-40">
+      <section id="contact" className="container pt-20 pb-40">
         <div className="flex flex-col gap-7 items-center text-center mt-14">
           <Title title="Contact" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
-            If you have any questions or ideas, you can call me at{" "}
+            If you have any questions or ideas, feel free to call me at{" "}
             <CustomLink text="(234) 814-172-6099" href="tel:2348141726099" /> or
-            inbox me at{" "}
+            email me at{" "}
             <CustomLink
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
             />
+            , I am eagerly ready to collaborate.
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">
