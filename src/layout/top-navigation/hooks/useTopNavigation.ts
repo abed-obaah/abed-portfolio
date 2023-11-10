@@ -12,18 +12,18 @@ export default () => {
 
   useEffect(() => {
     window.onscroll = () => {
-      const scrollUp = window.scrollY;
-      if (scrollUp > offset) {
-        setTop("-4.5rem");
+      const scrollY = window.scrollY;
+      if (scrollY > offset) {
+        setTop("-84px"); // The Header height: 64px + Top: 20px === 84px
       } else {
         setTop(margin);
       }
-      setOffset(scrollUp);
-      handleScroll();
+      setOffset(scrollY);
+      handleScroll(scrollY);
     };
   }, [offset]);
 
-  // --- Hide vertical scroll when mobile menu is active --- //
+  // --- Prevent vertical scroll when mobile menu is active --- //
   useEffect(() => {
     if (menu) {
       lenis.stop();
@@ -34,20 +34,20 @@ export default () => {
     }
   }, [isDirty, lenis, menu]);
 
-  const handleScroll = () => {
+  const handleScroll = (scrollY: number) => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll("header nav a");
     sections.forEach((sec) => {
-      const scrollY = window.scrollY;
       const offset = sec.offsetTop - 150;
       const height = sec.offsetHeight;
       const id = sec.getAttribute("id");
       if (scrollY >= offset && scrollY < offset + height) {
-        navLinks.forEach((links) => {
-          links.classList.remove("active");
-          document
-            .querySelector(`header nav a[href*="${id}"]`)!
-            .classList.add("active");
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          const element = document.querySelector(`header nav a[href*="${id}"]`);
+          if (element) {
+            element.classList.add("active");
+          }
         });
       }
     });

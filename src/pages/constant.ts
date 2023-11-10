@@ -43,7 +43,7 @@ export const PROJECTS = [
   {
     name: "Island Luxury Property Listings",
     image: IslandLuxury,
-    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property. Designed and developed the website together with its admin dashboard.",
+    desc: "A web application with varieties of property listings ranging from Flats, Houses, Land & Commercial Property. I designed and developed the website together with its admin dashboard.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux"],
     live: "https://island-luxury-demo.netlify.app/",
@@ -59,7 +59,7 @@ export const PROJECTS = [
   },
   {
     name: "johnadibe.vercel.app",
-    desc: "My personal portfolio 😎.",
+    desc: "My personal portfolio 😎. The codebase is publicly available for use.",
     date: "Nov 10, 2023",
     stacks: [
       "React.js + Vite.js",

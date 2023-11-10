@@ -49,7 +49,6 @@ body {
 
   &:before {
     content: "";
-    display: block;
     position: fixed;
     inset: 0;
     background-image: url(../noise.png);
@@ -98,5 +97,3 @@ body {
   padding-left: $root-padding;
   padding-right: $root-padding;
 }
-
-/* --- Supported Devices --- */
