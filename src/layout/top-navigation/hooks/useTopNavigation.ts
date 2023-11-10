@@ -8,7 +8,6 @@ export default () => {
   const [offset, setOffset] = useState(0);
   const [top, setTop] = useState(margin);
   const [menu, setMenu] = useState(false);
-  const [isDirty, setIsDirty] = useState(false);
 
   useEffect(() => {
     window.onscroll = () => {
@@ -22,17 +21,6 @@ export default () => {
       handleScroll(scrollY);
     };
   }, [offset]);
-
-  // --- Prevent vertical scroll when mobile menu is active --- //
-  useEffect(() => {
-    if (menu) {
-      lenis.stop();
-    } else if (!menu && isDirty) {
-      lenis.start();
-    } else {
-      setIsDirty(true);
-    }
-  }, [isDirty, lenis, menu]);
 
   const handleScroll = (scrollY: number) => {
     const sections = document.querySelectorAll("section");

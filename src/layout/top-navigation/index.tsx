@@ -16,7 +16,7 @@ const TopNavigation = () => {
 
   return (
     <header
-      className="flex items-center justify-between h-16 px-4 md:px-12 border animate-fade-in"
+      className="flex items-center justify-between h-16 px-4 md:px-12 border animate-fade-in transition-all duration-300"
       style={{
         top,
         right: margin,
@@ -60,11 +60,11 @@ const TopNavigation = () => {
         />
       </div>
       <div
-        className={classNames("menu-btn", { close: menu })}
+        className={classNames("menu-btn block md:hidden", { close: menu })}
         onClick={() => setMenu(!menu)}
       >
         {[1, 2, 3].map((_, idx) => (
-          <div key={idx} className="btn-line bg-zinc-50" />
+          <div key={idx} className="btn-bar bg-zinc-50" />
         ))}
       </div>
     </header>

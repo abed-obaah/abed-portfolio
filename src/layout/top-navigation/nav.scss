@@ -29,11 +29,10 @@ header {
   }
 
   .menu-btn {
-    display: none;
-
-    .btn-line {
+    .btn-bar {
       width: 25px;
       height: 2px;
+      transition: all 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
 
       &:nth-child(2) {
         width: 20px;
@@ -46,14 +45,14 @@ header {
       transform: rotate(180deg);
       -webkit-transform: rotate(180deg);
 
-      .btn-line:nth-child(1) {
+      .btn-bar:nth-child(1) {
         transform: rotate(45deg) translate(6px, 6px);
         -webkit-transform: rotate(45deg) translate(6px, 6px);
       }
-      .btn-line:nth-child(2) {
+      .btn-bar:nth-child(2) {
         opacity: 0;
       }
-      .btn-line:nth-child(3) {
+      .btn-bar:nth-child(3) {
         transform: rotate(-45deg) translate(5.5px, -5.5px);
         -webkit-transform: rotate(-45deg) translate(5.5px, -5.5px);
       }
@@ -61,27 +60,9 @@ header {
   }
 }
 
-/* --- Supported Devices --- */
-@supports (transition: transition) {
-  header {
-    transition: 0.35s;
-  }
-  header .menu-btn {
-    transition: all 0.4s cubic-bezier(0.85, -0.07, 0.53, 1.36);
-  }
-  header .btn-line {
-    transition: all 0.25s cubic-bezier(1, 0.18, 0.6, 1.1);
-  }
-}
-
 /*** --- Media Queries --- ***/
-/* Medium Dimension */
 @media only screen and (max-width: 768px) {
   header {
-    .menu-btn {
-      display: block;
-      z-index: 999;
-    }
     nav {
       position: fixed;
       inset: 0;
@@ -95,28 +76,11 @@ header {
       row-gap: 2.5rem;
       height: 100dvh;
       transform: translateX(100%);
-    }
-    nav.nav-visible {
-      transform: translateX(0%);
-      &::before {
-        position: absolute;
-        background-color: red;
-        width: 100vw;
-        height: 40px;
-        inset: 0;
-      }
-    }
-  }
-
-  /* --- Supported Devices --- */
-  @supports (backdrop-filter: blur(0.5rem)) {
-    header nav.nav-visible {
-      backdrop-filter: blur(0.5rem);
-    }
-  }
-  @supports (transition: transition) {
-    header nav {
       transition: transform 350ms cubic-bezier(1, 0.18, 0.6, 1.1);
+
+      &.nav-visible {
+        transform: translateX(0%);
+      }
     }
   }
 }

@@ -33,7 +33,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="about" className="container pt-24 pb-20 animate-fade-in">
+      <section id="about" className="container pt-24 pb-16 animate-fade-in">
         <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
           <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
@@ -66,7 +66,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="container py-20">
+      <section id="projects" className="container pt-24 py-20">
         <div className="max-w-2xl">
           <Title title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">
