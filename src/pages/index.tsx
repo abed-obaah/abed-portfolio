@@ -33,15 +33,69 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="about" className="container pt-24 pb-16 animate-fade-in">
-        <div className="bg-card p-7 sm:p-14 md:px-20 md:py-14 border">
+      <section id="about" className="container pt-24 animate-fade-in">
+        <div className="bg-card p-5 sm:p-14 md:px-16 md:py-14 border">
           <div className="flex flex-col md:flex-row justify-between gap-7 sm:gap-10 pb-8 mb-8 border-b">
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                Enthusiastic frontend developer with over 3 years of experience
-                building responsive and scalable web applications, with a
-                particular passion for developing innovative UI/UX solutions.
+                My name is <span className="text-zinc-50">John</span>, and my
+                journey from a mathematics teacher to a seasoned frontend
+                developer has been nothing short of a thrilling adventure.
+                Graduating from the{" "}
+                <CustomLink
+                  href="https://www.unn.edu.ng/"
+                  text="University of Nigeria, Nsukka"
+                  target="_blank"
+                  withIcon
+                />
+                , with a B.Sc in Mathematics, I delved into academia. My love
+                for imparting knowledge led me to pursue a career in teaching
+                mathematics at secondary schools immediately after graduating.
+              </p>
+              <p>
+                While I embraced the role of an educator, I dearly nurtured the
+                zeal to get acquainted with things on the web and how they came
+                to be. So, in 2019 I relocated to the southwestern part of
+                Nigeria, precisely{" "}
+                <CustomLink
+                  href="https://www.google.com/search?q=Lagos%2C+Nigeria&oq=Lagos%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                  text="Lagos State"
+                  target="_blank"
+                  withIcon
+                />{" "}
+                where I decided to try something new. I found myself working in
+                customer service roles. This role allowed me to broaden my skill
+                set while simultaneously nurturing a newfound interest in
+                coding. Juggling a job in customer service with a deep dive into
+                the world of programming, I spent countless hours on weekends
+                and any other possible time I could spare to master the art of
+                coding and sharpen my technical skills.
+              </p>
+              <p>
+                Fate had it this time, and an unanticipated opportunity
+                presented itself. A{" "}
+                <CustomLink
+                  href="https://www.outcess.com/"
+                  text="reputable firm"
+                  target="_blank"
+                  withIcon
+                />{" "}
+                where I was employed as a customer service agent had an in-house
+                opening for a frontend developer. I seized this golden
+                opportunity and enthusiastically stepped into the world of web
+                development. I was only able to scale the interview process
+                because of the extra hours I invested in mastering frontend
+                technologies without knowing what the future holds.
+              </p>
+              <p>
+                Today, I have worked in 3 different companies for over 3 years
+                and have completed and contributed to 18+ projects while
+                embracing the ever-evolving nature of technology. I'm driven by
+                a passion for problem-solving and highly committed to
+                excellence, I continue to push the boundaries of what is
+                possible, and a relentless pursuit of a wider range of
+                capabilities in the world of technology and development.
               </p>
             </div>
           </div>
@@ -66,7 +120,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="projects" className="container pt-24 py-20">
+      <section id="projects" className="container pt-40">
         <div className="max-w-2xl">
           <Title title="Projects" />
           <p className="text-zinc-500 text-lg mt-4">
@@ -87,7 +141,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="contact" className="container pt-20 pb-40">
+      <section id="contact" className="container pt-40 pb-40">
         <div className="flex flex-col gap-7 items-center text-center mt-14">
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
@@ -98,7 +152,7 @@ const Home = () => {
               text="johnadibe450@gmail.com"
               href="mailto:johnadibe450@gmail.com"
             />
-            , I am eagerly ready to collaborate.
+            , I'm eagerly ready to collaborate.
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">

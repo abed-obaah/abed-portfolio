@@ -1,7 +1,7 @@
 <div align="center">
-    <a href="https://johnadibe.vercel.app/">
-       <h1 align="center">johnadibe.vercel.app</h1>
-    </a>
+   <a href="https://johnadibe.vercel.app/">
+      <h1 align="center">johnadibe.vercel.app</h1>
+   </a>
    My personal website, built with React.js + Vite.js, Tailwind CSS and deployed to Vercel.
 </div>
 
