@@ -56,25 +56,15 @@ const Home = () => {
               <p>
                 While I embraced the role of an educator, I dearly nurtured the
                 zeal to get acquainted with things on the web and how they came
-                to be. So, in 2019 I relocated to the southwestern part of
-                Nigeria, precisely{" "}
-                <CustomLink
-                  href="https://www.google.com/search?q=Lagos%2C+Nigeria&oq=Lagos%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                  text="Lagos State"
-                  target="_blank"
-                  withIcon
-                />{" "}
-                where I decided to try something new. I found myself working in
-                customer service roles. This role allowed me to broaden my skill
-                set while simultaneously nurturing a newfound interest in
-                coding. Juggling a job in customer service with a deep dive into
-                the world of programming, I spent countless hours on weekends
-                and any other possible time I could spare to master the art of
-                coding and sharpen my technical skills.
+                to be. So, in 2019 I decided to try something new. I found
+                myself working in customer service roles. This role allowed me
+                to broaden my skill set while simultaneously mastering the art
+                of coding, countless hours on weekends, and any other possible
+                time I could spare.
               </p>
               <p>
-                Fate had it this time, and an unanticipated opportunity
-                presented itself. A{" "}
+                Fate had it this time, and an unexpected opportunity presented
+                itself. A{" "}
                 <CustomLink
                   href="https://www.outcess.com/"
                   text="reputable firm"
@@ -84,18 +74,27 @@ const Home = () => {
                 where I was employed as a customer service agent had an in-house
                 opening for a frontend developer. I seized this golden
                 opportunity and enthusiastically stepped into the world of web
-                development. I was only able to scale the interview process
-                because of the extra hours I invested in mastering frontend
-                technologies without knowing what the future holds.
+                development. Thanks to the extra hours of dedication.
               </p>
               <p>
-                Today, I have worked in 3 different companies for over 3 years
-                and have completed and contributed to 18+ projects while
-                embracing the ever-evolving nature of technology. I'm driven by
-                a passion for problem-solving and highly committed to
-                excellence, I continue to push the boundaries of what is
-                possible, and a relentless pursuit of a wider range of
-                capabilities in the world of technology and development.
+                Today, I've had the privilege of building software for a
+                business process{" "}
+                <CustomLink
+                  href="https://www.outcess.com/"
+                  text="outsourcing company"
+                  target="_blank"
+                  withIcon
+                />
+                , and a{" "}
+                <CustomLink
+                  href="https://www.myclinify.com/"
+                  text="healthcare agency"
+                  target="_blank"
+                  withIcon
+                />
+                . I'm driven by a passion for problem-solving while committed to
+                lifelong learning and self-improvement. Currently focused on
+                building quality, user-centric, and scalable products.
               </p>
             </div>
           </div>
