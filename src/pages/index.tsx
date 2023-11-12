@@ -56,11 +56,18 @@ const Home = () => {
               <p>
                 While I embraced the role of an educator, I dearly nurtured the
                 zeal to get acquainted with things on the web and how they came
-                to be. So, in 2019 I decided to try something new. I found
-                myself working in customer service roles. This role allowed me
-                to broaden my skill set while simultaneously mastering the art
-                of coding, countless hours on weekends, and any other possible
-                time I could spare.
+                to be. So, in 2019 I relocated to the southwestern part of
+                Nigeria, precisely{" "}
+                <CustomLink
+                  href="https://www.google.com/search?q=Lagos%2C+Nigeria&oq=Lagos%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                  text="Lagos State"
+                  target="_blank"
+                  withIcon
+                />{" "}
+                where I decided to try something new. I found myself working in
+                customer service roles. This role allowed me to broaden my skill
+                set while simultaneously mastering the art of coding, countless
+                hours on weekends, and any other possible time I could spare.
               </p>
               <p>
                 Fate had it this time, and an unexpected opportunity presented
@@ -85,16 +92,17 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , and a{" "}
+                , a{" "}
                 <CustomLink
                   href="https://www.myclinify.com/"
                   text="healthcare agency"
                   target="_blank"
                   withIcon
                 />
-                . I'm driven by a passion for problem-solving while committed to
-                lifelong learning and self-improvement. Currently focused on
-                building quality, user-centric, and scalable products.
+                , and startups. I'm driven by a passion for problem-solving
+                while committed to lifelong learning and self-improvement.
+                Currently focused on building quality, user-centric, and
+                scalable products.
               </p>
             </div>
           </div>

@@ -75,7 +75,7 @@ export const PROJECTS = [
     name: "Em2gee Foods",
     image: Em2geeFoods,
     desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery 😄.",
-    date: "December 27, 2021",
+    date: "December 27, 2020",
     stacks: ["jQuery", "Javascript", "HTML", "CSS"],
     live: "https://johnphealipto.github.io/em2gee-foods/",
     code: "https://github.com/johnphealipto/em2gee-foods",
