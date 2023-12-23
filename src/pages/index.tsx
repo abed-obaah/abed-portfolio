@@ -56,11 +56,11 @@ const Home = () => {
               <p>
                 While I embraced the role of an educator, I dearly nurtured the
                 zeal to get acquainted with things on the web and how they came
-                to be. So, in 2019 I relocated to the southwestern part of
+                to be. So, in 2019 I relocated to the Southern part of
                 Nigeria, precisely{" "}
                 <CustomLink
-                  href="https://www.google.com/search?q=Lagos%2C+Nigeria&oq=Lagos%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                  text="Lagos State"
+                  href="https://www.google.com/search?q=Delta%2C+Nigeria&oq=Delta%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
+                  text="Delta state"
                   target="_blank"
                   withIcon
                 />{" "}
