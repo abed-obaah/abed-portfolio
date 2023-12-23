@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import Logo from "@/assets/icons/john.svg?react";
+// import Logo from "@/assets/icons/john.svg?react";
 import CustomButton from "@/components/button";
 import useTopNavigation from "./hooks/useTopNavigation";
 
@@ -23,9 +23,9 @@ const TopNavigation = () => {
         left: margin,
       }}
     >
-      <a href="/" className="text-zinc-50">
+      {/* <a href="/" className="text-zinc-50">
         <Logo width={100} height={100} />
-      </a>
+      </a> */}
       <nav
         className={classNames("border-l md:border-l-0", {
           "nav-visible": menu,
@@ -46,7 +46,7 @@ const TopNavigation = () => {
         ))}
         <div className="block md:hidden mt-5">
           <CustomButton
-            href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+            href="https://drive.google.com/file/d/1VYSOglGxSPwS49EIDu6kkcc9W72o3nHS/view?usp=drivesdk"
             text="Résumé"
             icon="file-link"
           />
@@ -54,7 +54,7 @@ const TopNavigation = () => {
       </nav>
       <div className="hidden md:block">
         <CustomButton
-          href="https://drive.google.com/file/d/1s1DPe36CaSGmsjSEJ3jmQUuOMHqIqVYO/view"
+          href="https://drive.google.com/file/d/1VYSOglGxSPwS49EIDu6kkcc9W72o3nHS/view?usp=drivesdk"
           text="Résumé"
           icon="file-link"
         />

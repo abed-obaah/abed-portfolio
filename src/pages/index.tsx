@@ -10,7 +10,7 @@ const Home = () => {
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
-            John Adibe
+          abednego obaah
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
             Frontend Engineer
@@ -39,17 +39,17 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                My name is <span className="text-zinc-50">John</span>, and my
-                journey from a mathematics teacher to a seasoned frontend
+                My name is <span className="text-zinc-50">abednego</span>, and my
+                journey from a Biochemist to a seasoned frontend
                 developer has been nothing short of a thrilling adventure.
                 Graduating from the{" "}
                 <CustomLink
-                  href="https://www.unn.edu.ng/"
-                  text="University of Nigeria, Nsukka"
+                  href="https://www.delsu.edu.ng/"
+                  text="Delta State University, Abraka, Delta"
                   target="_blank"
                   withIcon
                 />
-                , with a B.Sc in Mathematics, I delved into academia. My love
+                , with a B.Sc in Biochemistry, I delved into academia. My love
                 for imparting knowledge led me to pursue a career in teaching
                 mathematics at secondary schools immediately after graduating.
               </p>
@@ -73,8 +73,8 @@ const Home = () => {
                 Fate had it this time, and an unexpected opportunity presented
                 itself. A{" "}
                 <CustomLink
-                  href="https://www.outcess.com/"
-                  text="reputable firm"
+                  href="https://www.Trybe201.com/"
+                  text="Tech Community"
                   target="_blank"
                   withIcon
                 />{" "}
@@ -87,15 +87,15 @@ const Home = () => {
                 Today, I've had the privilege of building software for a
                 business process{" "}
                 <CustomLink
-                  href="https://www.outcess.com/"
-                  text="outsourcing company"
+                  href="https://www.orralearn.com/"
+                  text="E-learning Platform"
                   target="_blank"
                   withIcon
                 />
                 , a{" "}
                 <CustomLink
-                  href="https://www.myclinify.com/"
-                  text="healthcare agency"
+                  href="https://www.bittradexpert.com/"
+                  text="Crypto Exchange Platform"
                   target="_blank"
                   withIcon
                 />
@@ -153,19 +153,19 @@ const Home = () => {
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
             If you have any questions or ideas, feel free to call me at{" "}
-            <CustomLink text="(234) 814-172-6099" href="tel:2348141726099" /> or
+            <CustomLink text="(234) 9058389203" href="tel:2349058389203" /> or
             email me at{" "}
             <CustomLink
-              text="johnadibe450@gmail.com"
-              href="mailto:johnadibe450@gmail.com"
+              text="ubahobaah@gmail.com"
+              href="mailto:ubahobaah@gmail.com"
             />
             , I'm eagerly ready to collaborate.
           </p>
           <p>OR</p>
           <div className="flex text-center items-center">
             <CustomButton
-              text="Meeting with John"
-              href="https://calendly.com/john-adibe"
+              text="Meeting with Abed"
+              href="https://calendly.com/abed-obaah"
               icon="calendar"
             />
           </div>
