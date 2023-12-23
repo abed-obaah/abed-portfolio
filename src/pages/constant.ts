@@ -194,7 +194,6 @@ export const TECH_STACKS_TOOLS = [
     collections: [
       { icon: VscodeIcon, name: "VSCode" },
       { icon: FigmaIcon, name: "Figma" },
-      { icon: BlenderIcon, name: "Blender" },
       { icon: AndroidStudioIcon, name: "Android Studio" },
       { icon: AndroidStudioIcon, name: "PhotoShop" },
     ],
