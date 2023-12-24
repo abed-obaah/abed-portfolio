@@ -10,7 +10,7 @@ const Home = () => {
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
-          abednego obaah
+            abednego obaah
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
             Frontend Engineer
@@ -49,23 +49,16 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                , with a B.Sc in Biochemistry, I delved into academia. My love
-                for imparting knowledge led me to pursue a career in teaching
-                mathematics at secondary schools immediately after graduating.
+                , with a B.Sc in Biochemistry,
               </p>
               <p>
-                While I embraced the role of an educator, I dearly nurtured the
-                zeal to get acquainted with things on the web and how they came
-                to be. So, in 2019 I relocated to the Southern part of
-                Nigeria, precisely{" "}
-                <CustomLink
-                  href="https://www.google.com/search?q=Delta%2C+Nigeria&oq=Delta%2C+Nigeria&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEINjE1OWowajmoAgCwAgA&sourceid=chrome&ie=UTF-8"
-                  text="Delta state"
+
+                where I decided to try something new. I Interned at <CustomLink
+                  href="https://hamplustech.com/"
+                  text="HamPlus Hub"
                   target="_blank"
                   withIcon
-                />{" "}
-                where I decided to try something new. I found myself working in
-                customer service roles. This role allowed me to broaden my skill
+                />{" "} . This allowed me to broaden my skill
                 set while simultaneously mastering the art of coding, countless
                 hours on weekends, and any other possible time I could spare.
               </p>
@@ -78,14 +71,11 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />{" "}
-                where I was employed as a customer service agent had an in-house
-                opening for a frontend developer. I seized this golden
-                opportunity and enthusiastically stepped into the world of web
-                development. Thanks to the extra hours of dedication.
+
               </p>
               <p>
                 Today, I've had the privilege of building software for a
-                business process{" "}
+                elearning organizations{" "}
                 <CustomLink
                   href="https://www.orralearn.com/"
                   text="E-learning Platform"
