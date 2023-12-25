@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
       <div className="flex justify-between items-center">
         <span className="text-zinc-400 text-sm">{project.date}</span>
         <div className="flex gap-4 items-center">
-          {project.figma ? (
+          {/* {project.figma ? (
             <a
               href={project.figma}
               className="text-zinc-500 transition duration-300 hover:text-orange-strong"
@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
             >
               <FigmaOutlinedIcon width={21} height={21} />
             </a>
-          ) : null}
+          ) : null} */}
           {project.code ? (
             <a
               href={project.code}
@@ -35,12 +35,13 @@ const ProjectCard = ({ project }) => {
           ) : null}
         </div>
       </div>
-      {project.image ? (
-        <img src={project.image} alt="" className="w-full border" />
-      ) : null}
       <h3 className="text-zinc-50 font-bold text-xl sm:text-2xl">
         {project.name}
       </h3>
+      {project.image ? (
+        <img src={project.image} alt="" className="w-full border" />
+      ) : null}
+      
       <p className="text-zinc-500 text-sm sm:text-base">{project.desc}</p>
       <div className="flex flex-wrap gap-x-2 gap-y-1">
         <span className="text-zinc-50 font-semibold text-sm sm:text-base">
