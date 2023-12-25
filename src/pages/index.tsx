@@ -10,7 +10,7 @@ const Home = () => {
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
-            abednego obaah
+            Obaah Abednego
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
             Frontend Engineer
@@ -39,19 +39,28 @@ const Home = () => {
             <Title title="About Me" align="center" />
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
-                My name is <span className="text-zinc-50">abednego</span>, and my
-                journey from a Biochemist to a seasoned frontend
-                developer has been nothing short of a thrilling adventure.
-                Graduating from the{" "}
-                <CustomLink
-                  href="https://www.delsu.edu.ng/"
-                  text="Delta State University, Abraka, Delta"
+                My name is <span className="text-zinc-50">Abednego</span>,
+                 a Full Stack Web Developer with hands-on experience in crafting remarkable digital solutions. 
+                 I specialize in React.js And React Native
+                  for Frontend finnese and Php for solid backend functionality. When it comes to design, I wield Css and Tailwind to create
+                   responsive Interfaces{" "}.
+                   I've had the privilege of working on some incredible projects, like from building an <CustomLink
+                  href="https://www.orralearn.com/"
+                  text="E-learning Platform"
+                  target="_blank"
+                  withIcon
+                /> to developing a 
+                   <CustomLink
+                  href="https://www.bittradexpert.com/"
+                  text="Crypto Exchange Platform"
                   target="_blank"
                   withIcon
                 />
-                , with a B.Sc in Biochemistry,
+                   I have a strong foundation in HTML, CSS, JavaScript. I'm not just a coder,I'm a problem solver and an avid learner.
+                  
+               
               </p>
-              <p>
+              {/* <p>
 
                 where I decided to try something new. I Interned at <CustomLink
                   href="https://hamplustech.com/"
@@ -76,24 +85,14 @@ const Home = () => {
               <p>
                 Today, I've had the privilege of building software for a
                 elearning organizations{" "}
-                <CustomLink
-                  href="https://www.orralearn.com/"
-                  text="E-learning Platform"
-                  target="_blank"
-                  withIcon
-                />
+           
                 , a{" "}
-                <CustomLink
-                  href="https://www.bittradexpert.com/"
-                  text="Crypto Exchange Platform"
-                  target="_blank"
-                  withIcon
-                />
+              
                 , and startups. I'm driven by a passion for problem-solving
                 while committed to lifelong learning and self-improvement.
                 Currently focused on building quality, user-centric, and
                 scalable products.
-              </p>
+              </p> */}
             </div>
           </div>
           <div className="flex flex-col gap-8">
@@ -155,7 +154,7 @@ const Home = () => {
           <div className="flex text-center items-center">
             <CustomButton
               text="Meeting with Abed"
-              href="https://calendly.com/abed-obaah"
+              href="https://calendly.com/chineduobaah"
               icon="calendar"
             />
           </div>

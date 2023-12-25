@@ -60,12 +60,31 @@ export const PROJECTS = [
       "#",
   },
   {
+    name: "Trybe201",
+    image: Trybe,
+    desc: "Trybe201 community offers complimentary hands-on training across diverse Tech Skills and fosters an inclusive environment centered around experiential learning.",
+    date: "Dec 20, 2023",
+    stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
+    live: "http://trybe201.com/",
+    figma:
+      "#",
+  },
+  {
+    name: "Travel Agency",
+    image: Travel,
+    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery 😄.",
+    date: "December 27, 2020",
+    stacks: ["jQuery", "Javascript", "HTML", "CSS"],
+    live: "https://travel-agency-sigma.vercel.app/",
+    code: "#",
+  },
+  {
     name: "bittradexpert",
     image: bit,
     desc: "A web application with the most complete tools to invest in crypto. Buy, store, trade, exchange, learn and earn crypto with a single tap.",
     date: "Aug 20, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Php","coinbase Api"],
-    live: "https://curxchange-system.netlify.app/",
+    live: "https://bittradexpert.com",
     figma:
       "#",
   },
@@ -75,7 +94,7 @@ export const PROJECTS = [
     desc: "cutting-edge showcase of my expertise in blockchain technology and cryptocurrency. This project is a dynamic and interactive web platform designed to highlight my skills, experiences, and contributions to the rapidly evolving world of decentralized finance and blockchain applications.",
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
-    live: "https://zigxchange.netlify.app/",
+    live: "https://zigzag.exchange",
     figma:
       "#",
   },
@@ -89,16 +108,7 @@ export const PROJECTS = [
     figma:
       "#",
   },
-  {
-    name: "Trybe201",
-    image: Trybe,
-    desc: "Trybe201 community offers complimentary hands-on training across diverse Tech Skills and fosters an inclusive environment centered around experiential learning.",
-    date: "Dec 20, 2023",
-    stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
-    live: "http://trybe201.com/",
-    figma:
-      "#",
-  },
+ 
   {
     name: "Qbucks",
     image: IslandLuxury,
@@ -130,15 +140,7 @@ export const PROJECTS = [
     ],
     code: "https://github.com/abed-obaah/portfolio",
   },
-  {
-    name: "Travel Agency",
-    image: Travel,
-    desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery 😄.",
-    date: "December 27, 2020",
-    stacks: ["jQuery", "Javascript", "HTML", "CSS"],
-    live: "https://travel-agency-sigma.vercel.app/",
-    code: "#",
-  },
+  
   {
     name: "Hosterr",
     image: hoterr,
@@ -173,7 +175,6 @@ export const TECH_STACKS_TOOLS = [
     title: "Technologies",
     collections: [
       { icon: JavascriptIcon, name: "Javascript" },
-      { icon: TypescriptIcon, name: "Typescript" },
       { icon: TypescriptIcon, name: "Php" },
       { icon: TypescriptIcon, name: "Laravel" },
       { icon: ReactIcon, name: "React.js" },
