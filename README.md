@@ -7,10 +7,7 @@
 
 ## Running Locally
 
-```sh-session
-git clone https://github.com/johnphealipto/portfolio.git
-cd portfolio
-```
+
 
 Then install dependencies and run the development server:
 
