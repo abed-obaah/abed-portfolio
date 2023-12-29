@@ -10,7 +10,7 @@ const Home = () => {
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
         <div className="hero-content flex flex-col gap-4 items-center text-center m-auto">
           <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold whitespace-nowrap animate-title">
-            Obaah Abednego
+            Obaah Abed
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
             Frontend Engineer
