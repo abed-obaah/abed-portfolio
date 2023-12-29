@@ -46,7 +46,7 @@ const TopNavigation = () => {
         ))}
         <div className="block md:hidden mt-5">
           <CustomButton
-            href="https://drive.google.com/file/d/1VYSOglGxSPwS49EIDu6kkcc9W72o3nHS/view?usp=drivesdk"
+            href="https://drive.google.com/file/d/1_OzvreuocZfTc7loNFTCqSiag2kNlJgS/view?usp=drivesdk"
             text="Résumé"
             icon="file-link"
           />
@@ -54,7 +54,7 @@ const TopNavigation = () => {
       </nav>
       <div className="hidden md:block">
         <CustomButton
-          href="https://drive.google.com/file/d/1VYSOglGxSPwS49EIDu6kkcc9W72o3nHS/view?usp=drivesdk"
+          href="https://drive.google.com/file/d/1_OzvreuocZfTc7loNFTCqSiag2kNlJgS/view?usp=drivesdk"
           text="Résumé"
           icon="file-link"
         />
