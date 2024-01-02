@@ -109,16 +109,16 @@ export const PROJECTS = [
       "#",
   },
  
-  {
-    name: "Qbucks",
-    image: IslandLuxury,
-    desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
-    date: "Feb 10, 2022",
-    stacks: ["React Native", "Javascript", "CSS", "Redux"],
-    live: "https://qbucks.com.ng",
-    figma:
-      "#",
-  },
+  // {
+  //   name: "Qbucks",
+  //   image: IslandLuxury,
+  //   desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
+  //   date: "Feb 10, 2022",
+  //   stacks: ["React Native", "Javascript", "CSS", "Redux"],
+  //   live: "https://qbucks.com.ng",
+  //   figma:
+  //     "#",
+  // },
   // {
   //   name: "Davinci-writer",
   //   desc: "Ultimate Ai Creator,blogs,text-to-speach,ad creations.",
