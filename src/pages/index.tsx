@@ -12,6 +12,8 @@ const Home = () => {
     setActiveContent(content);
   };
 
+  
+
   return (
     <>
       <section id="hero" className="container flex pt-24 min-h-[60vh]">
@@ -209,7 +211,7 @@ const Home = () => {
           }
         `}
       </style>
-    </div>
+         </div>
        
         
       </section>
