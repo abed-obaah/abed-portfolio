@@ -147,27 +147,44 @@ const Home = () => {
           className={activeContent === 'mobile' ? 'actives' : ''}
           style={{ padding: '8px', borderRadius: '25px', width: '50%' }}
         >
-          <span className="button-text">Mobile</span>
+          <span className="button-text">Mobile Apps</span>
         </button>
       </div>
       {activeContent === 'web' ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
-        <div className="flex flex-col gap-8">
-          {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
-          ))}
-        </div>
-        <div className="flex flex-col gap-8">
-          {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
-            <ProjectCard key={idx} project={project} />
-          ))}
-        </div>
-      </div>
+        <><p className="text-lg">
+              Web Content
+            </p><div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
+                <div className="flex flex-col gap-8">
+                  {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
+                    <ProjectCard key={idx} project={project} />
+                  ))}
+                </div>
+                <div className="flex flex-col gap-8">
+                  {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
+                    <ProjectCard key={idx} project={project} />
+                  ))}
+                </div>
+              </div></>
       ) : (
+        <>
         <p className="text-lg">
-          Mobile APPs Content
-        </p>
-      )}
+                Mobile APPs Content
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
+
+                  <div className="flex flex-col gap-8">
+                    {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
+                      <ProjectCard key={idx} project={project} />
+                    ))}
+                  </div>
+                  <div className="flex flex-col gap-8">
+                    {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
+                      <ProjectCard key={idx} project={project} />
+                    ))}
+                  </div>
+                </div></>
+        ) 
+      }
       <style>
         {`
           .actives {
