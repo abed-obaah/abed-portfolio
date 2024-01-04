@@ -32,6 +32,7 @@ import hoterr from "@/assets/Screenshot (423).png";
 import Em2geeFoods2 from "@/assets/Pro6.png";
 import Em2geeFoods3 from "@/assets/Pro2.png";
 import Em2geeFoods4 from "@/assets/Pro3.png";
+import Em2geeFoods5 from "@/assets/Untitled design (1).png";
 
 export const SOCIAL_LINKS = [
   {
@@ -56,8 +57,7 @@ export const PROJECTS = [
     date: "Mar 10, 2023",
     stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux","React"],
     live: "https://orralearn.com/",
-    figma:
-      "#",
+    code: "#",
   },
   {
     name: "Trybe201",
@@ -66,8 +66,7 @@ export const PROJECTS = [
     date: "Dec 20, 2023",
     stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
     live: "http://trybe201.com/",
-    figma:
-      "#",
+    code: "#",
   },
   // {
   //   name: "Travel Agency",
@@ -85,8 +84,7 @@ export const PROJECTS = [
     date: "Aug 20, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Php","coinbase Api"],
     live: "https://bittradexpert.com",
-    figma:
-      "#",
+    code: "#",
   },
   {
     name: "zigzag",
@@ -105,8 +103,7 @@ export const PROJECTS = [
     date: "Jan 01, 2023",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
     live: "https://wealth-management-site.netlify.app/en.html",
-    figma:
-      "#",
+    code: "#",
   },
  
   // {
@@ -204,12 +201,11 @@ export const TECH_STACKS_TOOLS = [
 export const Mobile_APP = [
    {
     name: "Qbucks",
-    image: IslandLuxury,
+    image: Em2geeFoods5,
     desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
     date: "Feb 10, 2022",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
     live: "https://qbucks.com.ng",
-    figma:
-      "#",
+    code: "#",
   },
 ]
