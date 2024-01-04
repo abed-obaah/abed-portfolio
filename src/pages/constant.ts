@@ -57,7 +57,7 @@ export const PROJECTS = [
     date: "Mar 10, 2023",
     stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux","React"],
     live: "https://orralearn.com/",
-    code: "#",
+    code: "https://github.com/abed-obaah/orralearn-web",
   },
   {
     name: "Trybe201",
