@@ -1,7 +1,8 @@
 import Title from "@/components/title";
 import React,{ useState } from "react";
-import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS } from "./constant";
+import { PROJECTS, SOCIAL_LINKS, TECH_STACKS_TOOLS,Mobile_APP } from "./constant";
 import ProjectCard from "../components/project";
+import MobileCard from "../components/mobile";
 import CustomButton from "@/components/button";
 import CustomLink from "@/components/link";
 
@@ -155,7 +156,8 @@ const Home = () => {
       {activeContent === 'web' ? (
         <><p className="text-lg">
               Web Content
-            </p><div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
                 <div className="flex flex-col gap-8">
                   {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
                     <ProjectCard key={idx} project={project} />
@@ -166,25 +168,26 @@ const Home = () => {
                     <ProjectCard key={idx} project={project} />
                   ))}
                 </div>
-              </div></>
+              </div>
+              </>
       ) : (
         <>
-        <p className="text-lg">
-                Mobile APPs Content
+            <p className="text-lg">
+                Mobile APPs Contents
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
-
-                  <div className="flex flex-col gap-8">
-                    {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
-                      <ProjectCard key={idx} project={project} />
-                    ))}
-                  </div>
-                  <div className="flex flex-col gap-8">
-                    {PROJECTS.filter((_, idx) => idx % 2 !== 0).map((project, idx) => (
-                      <ProjectCard key={idx} project={project} />
-                    ))}
-                  </div>
-                </div></>
+                <div className="flex flex-col gap-8">
+                  {Mobile_APP.filter((_, idx) => idx % 2 === 0).map((mobile, idx) => (
+                    <MobileCard key={idx} mobile={mobile} />
+                  ))}
+                </div>
+                <div className="flex flex-col gap-8">
+                  {Mobile_APP.filter((_, idx) => idx % 2 !== 0).map((mobile, idx) => (
+                    <MobileCard key={idx} mobile={mobile} />
+                  ))}
+                </div>
+              </div>
+          </>
         ) 
       }
       <style>
