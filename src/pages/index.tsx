@@ -154,9 +154,7 @@ const Home = () => {
         </button>
       </div>
       {activeContent === 'web' ? (
-        <><p className="text-lg">
-              Web Content
-            </p>
+        <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
                 <div className="flex flex-col gap-8">
                   {PROJECTS.filter((_, idx) => idx % 2 === 0).map((project, idx) => (
@@ -172,9 +170,7 @@ const Home = () => {
               </>
       ) : (
         <>
-            <p className="text-lg">
-                Mobile APPs Contents
-              </p>
+            
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-14">
                 <div className="flex flex-col gap-8">
                   {Mobile_APP.filter((_, idx) => idx % 2 === 0).map((mobile, idx) => (
