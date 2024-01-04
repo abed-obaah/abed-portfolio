@@ -66,7 +66,7 @@ export const PROJECTS = [
     date: "Dec 20, 2023",
     stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
     live: "http://trybe201.com/",
-    code: "#",
+    code: "https://github.com/abed-obaah/trybe201",
   },
   // {
   //   name: "Travel Agency",
