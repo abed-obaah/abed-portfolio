@@ -84,7 +84,7 @@ export const PROJECTS = [
     date: "Aug 20, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Php","coinbase Api"],
     live: "https://bittradexpert.com",
-    code: "#",
+    code: "https://github.com/abed-obaah/bittradexpert",
   },
   {
     name: "zigzag",
