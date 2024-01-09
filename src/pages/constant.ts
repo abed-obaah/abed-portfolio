@@ -93,8 +93,7 @@ export const PROJECTS = [
     date: "Feb 10, 2022",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
     live: "https://zigzag.exchange",
-    figma:
-      "#",
+    
   },
   {
     name: "wealth-management-site",
