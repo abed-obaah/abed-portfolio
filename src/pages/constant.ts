@@ -100,7 +100,7 @@ export const PROJECTS = [
     image: astro,
     desc: "an innovative Web3-powered platform designed to revolutionize the way users engage with cryptocurrencies and blockchain technology. This project aims to create a dynamic and immersive space that combines cutting-edge web development with the decentralized and secure nature of blockchain.",
     date: "Jan 01, 2023",
-    stacks: ["React.js", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
+    stacks: ["Reactjs", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
     live: "https://wealth-management-site.netlify.app/en.html",
     code: "#",
   },
