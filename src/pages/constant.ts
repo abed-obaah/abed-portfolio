@@ -34,6 +34,7 @@ import Em2geeFoods3 from "@/assets/Pro2.png";
 import Em2geeFoods4 from "@/assets/Pro3.png";
 import Em2geeFoods5 from "@/assets/Untitled design (1).png";
 import mobile from "@/assets/mobile.webp";
+import decmark from "@/assets/decmark_cover.jpg";
 import mobile1 from "@/assets/68747470733a2f2f646f776e6c6f61642e617070646576732e6e65742f62616e6e65722f656e7661746f2f75692f7862616e6b2f312e706e67.png";
 
 export const SOCIAL_LINKS = [
@@ -229,11 +230,11 @@ export const Mobile_APP = [
   },
      {
     name: "DecMark(Android)",
-    image: mobile1,
+    image: decmark,
     desc: "DecMark is a full application for rendering services to the users ",
     date: "mar 15, 2023",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
     live: "https://drive.google.com/file/d/1j3lN1FjfGF53bxFa58dciMph1tBU9LSZ/view?usp=sharing",
-    code: "#",
+    code: "https://github.com/abed-obaah/decmark-front",
   },
 ]
