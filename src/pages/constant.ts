@@ -221,7 +221,7 @@ export const Mobile_APP = [
    {
     name: "BankX",
     image: mobile1,
-    desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
+    desc: "BankX is a full application template for Online Banking & Money Transfer Wallets. If you are interested to develop your own Online Banking & Money Transfer Android and iOS apps like Paypal, Payoneer, or Skrill.",
     date: "Feb 10, 2022",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
     live: "https://drive.google.com/file/d/1cWMaFoTC_PdouXnuM2jjonARvzwBwc5f/view?usp=sharing",
