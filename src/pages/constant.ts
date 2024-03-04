@@ -33,6 +33,8 @@ import Em2geeFoods2 from "@/assets/Pro6.png";
 import Em2geeFoods3 from "@/assets/Pro2.png";
 import Em2geeFoods4 from "@/assets/Pro3.png";
 import Em2geeFoods5 from "@/assets/Untitled design (1).png";
+import mobile from "@/assets/mobile.webp";
+import mobile1 from "@/assets/68747470733a2f2f646f776e6c6f61642e617070646576732e6e65742f62616e6e65722f656e7661746f2f75692f7862616e6b2f312e706e67.png";
 
 export const SOCIAL_LINKS = [
   {
@@ -205,6 +207,24 @@ export const Mobile_APP = [
     date: "Feb 10, 2022",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
     live: "https://qbucks.com.ng",
+    code: "#",
+  },
+   {
+    name: "Rentify",
+    image: mobile,
+    desc: "RENTIFY - ONLINE CAR RENTAL BOOKING SYSTEM,Rentify offers an easy Car Finder feature for locating ideal vehicles based on preferences.",
+    date: "Mar 10, 2023",
+    stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux"],
+    live: "https://drive.google.com/file/d/1HXhVMLZflDi081pEJTIMnuI58iLarZd0/view?usp=drive_link",
+    code: "#",
+  },
+   {
+    name: "BankX",
+    image: mobile1,
+    desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
+    date: "Feb 10, 2022",
+    stacks: ["React Native", "Javascript", "CSS", "Redux"],
+    live: "https://drive.google.com/file/d/1cWMaFoTC_PdouXnuM2jjonARvzwBwc5f/view?usp=sharing",
     code: "#",
   },
 ]
