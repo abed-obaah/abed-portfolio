@@ -201,7 +201,7 @@ export const TECH_STACKS_TOOLS = [
 
 export const Mobile_APP = [
    {
-    name: "Qbucks",
+    name: "Qbucks (Android)",
     image: Em2geeFoods5,
     desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
     date: "Feb 10, 2022",
@@ -210,7 +210,7 @@ export const Mobile_APP = [
     code: "#",
   },
    {
-    name: "Rentify",
+    name: "Rentify (Android)",
     image: mobile,
     desc: "RENTIFY - ONLINE CAR RENTAL BOOKING SYSTEM,Rentify offers an easy Car Finder feature for locating ideal vehicles based on preferences.",
     date: "Mar 10, 2023",
@@ -219,12 +219,21 @@ export const Mobile_APP = [
     code: "#",
   },
    {
-    name: "BankX",
+    name: "BankX (Android)",
     image: mobile1,
-    desc: "BankX is a full application template for Online Banking & Money Transfer Wallets. If you are interested to develop your own Online Banking & Money Transfer Android and iOS apps like Paypal, Payoneer, or Skrill.",
+    desc: "BankX is a full application  for Online Banking & Money Transfer Wallets. If you are interested to develop your own Online Banking & Money Transfer Android and iOS apps like Paypal, Payoneer, or Skrill.",
     date: "Feb 10, 2022",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
     live: "https://drive.google.com/file/d/1cWMaFoTC_PdouXnuM2jjonARvzwBwc5f/view?usp=sharing",
+    code: "#",
+  },
+     {
+    name: "DecMark(Android)",
+    image: mobile1,
+    desc: "DecMark is a full application for rendering services to the users ",
+    date: "mar 15, 2023",
+    stacks: ["React Native", "Javascript", "CSS", "Redux"],
+    live: "https://drive.google.com/file/d/1j3lN1FjfGF53bxFa58dciMph1tBU9LSZ/view?usp=sharing",
     code: "#",
   },
 ]
