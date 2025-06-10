@@ -36,7 +36,7 @@ import Em2geeFoods5 from "@/assets/Untitled design (1).png";
 import mobile from "@/assets/mobile.webp";
 import decmark from "@/assets/decmark_cover.jpg";
 import centrl from "@/assets/centrl.jpeg";
-import slice from "@/assets/App Feature.png";
+import slice from "@/assets/App_Feature_Compressed.jpg";
 import answer from "@/assets/answer.png";
 import mobile1 from "@/assets/68747470733a2f2f646f776e6c6f61642e617070646576732e6e65742f62616e6e65722f656e7661746f2f75692f7862616e6b2f312e706e67.png";
 
