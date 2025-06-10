@@ -26,7 +26,7 @@ import Orralearn from "@/assets/Screenshot (414).png";
 import zig from "@/assets/orraweb4.png";
 import bit from "@/assets/orra4 (1).png";
 import astro from "@/assets/astro.png";
-import Trybe from "@/assets/Screenshot (422).png";
+import Trybe from "@/assets/Hero Section.png";
 import Travel from "@/assets/Screenshot (421).png";
 import hoterr from "@/assets/Screenshot (423).png";
 import Em2geeFoods2 from "@/assets/Pro6.png";
@@ -35,6 +35,9 @@ import Em2geeFoods4 from "@/assets/Pro3.png";
 import Em2geeFoods5 from "@/assets/Untitled design (1).png";
 import mobile from "@/assets/mobile.webp";
 import decmark from "@/assets/decmark_cover.jpg";
+import centrl from "@/assets/centrl.jpeg";
+import slice from "@/assets/App Feature.png";
+import answer from "@/assets/answer.png";
 import mobile1 from "@/assets/68747470733a2f2f646f776e6c6f61642e617070646576732e6e65742f62616e6e65722f656e7661746f2f75692f7862616e6b2f312e706e67.png";
 
 export const SOCIAL_LINKS = [
@@ -54,22 +57,22 @@ export const SOCIAL_LINKS = [
 
 export const PROJECTS = [
   {
-    name: "Orralearn",
-    image: Orralearn,
-    desc: "On Orralearn, you learn by doing. Challenge yourself on small coding exercises. Each Exercises is crafted by the community to help you strengthen different coding techniques.",
+    name: "Centrl",
+    image: centrl,
+    desc: "The ultimate platform for hosting and managing events, as well as creating and participating in exciting competitions.",
     date: "Mar 10, 2023",
     stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux","React"],
-    live: "https://orralearn.com/",
-    code: "https://github.com/abed-obaah/orralearn-web",
+    live: "https://centrl.netlify.app/",
+    code: "https://github.com/abed-obaah/",
   },
   {
-    name: "Trybe201",
+    name: "SprintVault",
     image: Trybe,
-    desc: "Trybe201 community offers complimentary hands-on training across diverse Tech Skills and fosters an inclusive environment centered around experiential learning.",
+    desc: " Platform to Convert Your Crypto To Cash.",
     date: "Dec 20, 2023",
     stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
-    live: "http://trybe201.com/",
-    code: "https://github.com/abed-obaah/trybe201",
+    live: "http://sprintvault.com/",
+    code: "https://github.com/abed-obaah/",
   },
   // {
   //   name: "Travel Agency",
@@ -193,12 +196,12 @@ export const TECH_STACKS_TOOLS = [
 
 export const Mobile_APP = [
    {
-    name: "Qbucks (Android)",
-    image: Em2geeFoods5,
-    desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
-    date: "Feb 10, 2022",
-    stacks: ["React Native", "Javascript", "CSS", "Redux"],
-    live: "https://qbucks.com.ng",
+    name: "Slics Ai",
+    image: slice,
+    desc: "Automated Expense Tracking",
+    date: "May, 2025",
+    stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux"],
+    live: "https://apps.apple.com/ng/app/slice-ai/id6739975347",
     code: "#",
   },
    {
@@ -220,12 +223,13 @@ export const Mobile_APP = [
     code: "#",
   },
      {
-    name: "DecMark(Android)",
-    image: decmark,
-    desc: "DecMark is a full application for rendering services to the users ",
+    name: "Answer.ai(Android)",
+    image: answer,
+    desc: "Answer ai is an ai tutor,to build skills in an grade ",
     date: "mar 15, 2023",
     stacks: ["React Native", "Javascript", "CSS", "Redux"],
-    live: "https://drive.google.com/file/d/1j3lN1FjfGF53bxFa58dciMph1tBU9LSZ/view?usp=sharing",
-    code: "https://github.com/abed-obaah/decmark-front",
+    // live: "https://drive.google.com/file/d/1j3lN1FjfGF53bxFa58dciMph1tBU9LSZ/view?usp=sharing",
+    live: "https://play.google.com/store/search?q=answer+ai&c=apps&hl=en",
+    code: "https://github.com/abed-obaah/",
   },
 ]
