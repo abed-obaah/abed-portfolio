@@ -62,7 +62,7 @@ export const PROJECTS = [
     desc: "The ultimate platform for hosting and managing events, as well as creating and participating in exciting competitions.",
     date: "Mar 10, 2023",
     stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux","React"],
-    live: "https://centrl.netlify.app/",
+    live: "https://www.centrl.ng/",
     code: "https://github.com/abed-obaah/",
   },
   {
