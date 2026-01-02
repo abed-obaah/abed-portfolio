@@ -218,7 +218,7 @@ const Home = () => {
           <Title title="Let's Talk" align="center" ignore />
           <p className="text-zinc-500 text-base sm:text-lg max-w-xl">
             If you have any questions or ideas, feel free to call me at{" "}
-            <CustomLink text="(234) 9058389203" href="tel:2349058389203" /> or
+            <CustomLink text="(234) 7071399411" href="tel:2347071399411" /> or
             email me at{" "}
             <CustomLink
               text="ubahobaah@gmail.com"

@@ -23,7 +23,7 @@ import {
 } from "@/assets/icons";
 import IslandLuxury from "@/assets/Pro1.png";
 import Orralearn from "@/assets/Screenshot (414).png";
-import zig from "@/assets/orraweb4.png";
+import zig from "@/assets/zid.png";
 import bit from "@/assets/orra4 (1).png";
 import astro from "@/assets/astro.png";
 import Trybe from "@/assets/Hero Section.png";
@@ -60,7 +60,7 @@ export const PROJECTS = [
     name: "Centrl",
     image: centrl,
     desc: "The ultimate platform for hosting and managing events, as well as creating and participating in exciting competitions.",
-    date: "Mar 10, 2023",
+    date: "Mar 10, 2025",
     stacks: ["React Native", "Javascript", "Tailwind CSS", "Redux","React"],
     live: "https://www.centrl.ng/",
     code: "https://github.com/abed-obaah/",
@@ -69,7 +69,7 @@ export const PROJECTS = [
     name: "SprintVault",
     image: Trybe,
     desc: " Platform to Convert Your Crypto To Cash.",
-    date: "Dec 20, 2023",
+    date: "Dec 20, 2025",
     stacks: ["React.js", "Javascript", "Tailwind CSS", "Redux"],
     live: "http://sprintvault.com/",
     code: "https://github.com/abed-obaah/",
@@ -84,12 +84,12 @@ export const PROJECTS = [
   //   code: "#",
   // },
   {
-    name: "zigzag",
+    name: "Fiatplug",
     image: zig,
-    desc: "cutting-edge showcase of my expertise in blockchain technology and cryptocurrency. This project is a dynamic and interactive web platform designed to highlight my skills, experiences, and contributions to the rapidly evolving world of decentralized finance and blockchain applications.",
-    date: "Feb 10, 2022",
+    desc: "Instant cash for gift cards & crypto exchange",
+    date: "Feb 10, 2023",
     stacks: ["React.js", "Javascript", "CSS", "Redux","Binance APi","coinbase Api","code mirror"],
-    live: "https://zigzag.exchange",
+    live: "https://www.fiatplug.com/",
     
   },
   {
