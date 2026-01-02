@@ -23,11 +23,10 @@ const Home = () => {
             Obaah Abed
           </h1>
           <h2 className="text-lg sm:text-2xl animate-fade-in">
-            Frontend Engineer
+           Fullstack mobile engineer
           </h2>
           <p className="text-zinc-500 text-base sm:text-lg font-light max-w-lg animate-fade-in">
-            I'm passionate about developing cutting-edge solutions and
-            implementing scalable web and mobile applications.
+           I’m a full-stack mobile engineer passionate about building scalable, high-performance web and mobile applications.
           </p>
           <div className="flex gap-5 mt-8">
             {SOCIAL_LINKS.map((item, idx) => (
