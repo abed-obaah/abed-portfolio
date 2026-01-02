@@ -49,7 +49,7 @@ const Home = () => {
             <div className="flex flex-col gap-4 text-zinc-500 md:w-9/12 text-sm sm:text-base">
               <p>
                 My name is <span className="text-zinc-50">Abednego</span>,
-                 a Full Stack Web Developer with hands-on experience in crafting remarkable digital solutions. 
+                 a full-stack mobile engineer and web developer with hands-on experience building scalable, high-quality digital solutions. 
                  I specialize in React.js And React Native
                   for Frontend finnese and Php for solid backend functionality. When it comes to design, I wield Css and Tailwind to create
                    responsive Interfaces{" "}.
@@ -65,7 +65,7 @@ const Home = () => {
                   target="_blank"
                   withIcon
                 />
-                   I have a strong foundation in HTML, CSS, JavaScript. I'm not just a coder,I'm a problem solver and an avid learner.
+                   I have a strong foundation in React Native, TypeScript, and modern JavaScript. I’m not just a coder—I’m a problem solver and an avid learner.
                   
                
               </p>
