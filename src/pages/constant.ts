@@ -21,13 +21,13 @@ import {
   TypescriptIcon,
   VscodeIcon,
 } from "@/assets/icons";
-import IslandLuxury from "@/assets/Pro1.png";
+import IslandLuxury from "@/assets/trubooker.png";
 import Orralearn from "@/assets/Screenshot (414).png";
 import zig from "@/assets/zid.png";
 import bit from "@/assets/orra4 (1).png";
 import astro from "@/assets/astro.png";
 import Trybe from "@/assets/Hero Section.png";
-import Travel from "@/assets/Screenshot (421).png";
+import Travel from "@/assets/senpay.png";
 import hoterr from "@/assets/Screenshot (423).png";
 import Em2geeFoods2 from "@/assets/Pro6.png";
 import Em2geeFoods3 from "@/assets/Pro2.png";
@@ -74,15 +74,15 @@ export const PROJECTS = [
     live: "http://sprintvault.com/",
     code: "https://github.com/abed-obaah/",
   },
-  // {
-  //   name: "Travel Agency",
-  //   image: Travel,
-  //   desc: "A branded website for a company that produces bean flour. This project is my first attempt building a full business website using jQuery 😄.",
-  //   date: "December 27, 2020",
-  //   stacks: ["jQuery", "Javascript", "HTML", "CSS"],
-  //   live: "https://travel-agency-sigma.vercel.app/",
-  //   code: "#",
-  // },
+  {
+    name: "Send Pay",
+    image: Travel,
+    desc: "Seamless & Secure Cross-Border Payments for People, Businesses & Enterprises.",
+    date: "December 06, 2025",
+    stacks: ["jQuery", "React", "Gsap", "Sentry"],
+    live: "https://sendpayments.com/",
+    code: "#",
+  },
   {
     name: "Fiatplug",
     image: zig,
@@ -102,16 +102,16 @@ export const PROJECTS = [
     code: "#",
   },
  
-  // {
-  //   name: "Qbucks",
-  //   image: IslandLuxury,
-  //   desc: "A one stop shop for instant recharge of Airtime, Data, TV & Electricity bill payments, WAEC & NECO PIN, Airtime 2 Cash. Conversion and many more.",
-  //   date: "Feb 10, 2022",
-  //   stacks: ["React Native", "Javascript", "CSS", "Redux"],
-  //   live: "https://qbucks.com.ng",
-  //   figma:
-  //     "#",
-  // },
+  {
+    name: "Trubooker",
+    image: IslandLuxury,
+    desc: "Redirecting your plans into Reality",
+    date: "Jul 20, 2024",
+    stacks: ["React", "Javascript", "CSS", "Redux"],
+    live: "https://www.trubooker.com/",
+    figma:
+      "#",
+  },
   // {
   //   name: "Davinci-writer",
   //   desc: "Ultimate Ai Creator,blogs,text-to-speach,ad creations.",
